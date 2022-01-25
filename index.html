@@ -1,12 +1,84 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Vlad's World</title>
-        <!-- Link to CSS here-->
-        <link />
-    </head>
+<head>
+<title>Vlad Frolov</title>
+<link href='/style.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>This will be Vlad's website, hosted on github pages</p>
+
+<!-- Remember headings and styles need a bit of work 
+Figma project here for reference: https://www.figma.com/file/DqnWkuBkpmpTnMTwNuGTZ0/My-Website?node-id=0%3A1
+-->
+
+<header>
+	<nav><h1 id="navLogo">Vlad Frolov</h1>
+		<h1>
+			<a id="navLink" href="https://github.com/vladdjpg" target="_blank">GitHub</a>
+			<a id="navLink" href="/about.html">About</a></h1>
+	</nav>
+</header>
+
+<main>
+
+<!-- Here's the about box featuring a dithered, coloured photo - or indeed an image of anything else -->
+<div id="introBox">
+	<img id="introImage" src="resources/aboutImage.png">
+	<h1 id="introHeader">Hi, I'm Vlad, and I'm a designer who codes.</h1>
+	<p id="introText">Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.Hev a good thyme.</p>
+</div>
+
+<div style="display: block; float: none; width: 100%; position: relative;">
+	<h4> 
+    <div style="float:left;">Left Text</div>
+    <div style="float:right;">Right Text</div>
+    <div style="clear: left;">
+</h4>
+</div>
+
+
+<!-- Add portfolio items below with oldest items last -->
+
+<!-- id portfolioTitleOver is the **roboto** text in dark colour
+id portfolioTitleUnder is the Lyno text in brighter colour + it is bigger -->
+
+<section class="portfolioItem">
+
+<div id="itemTitle" style="padding: 1em 0em;">
+	<h2 id=“portfolioTitleOver” style="text-align: center; position: relative; top: 45px;">Horoscope</h2>
+	<h2 id=“portfolioTitleUnder” style="text-align: center; font-family: LynoJean; font-size: 3em; color: pink;">Horoscope</h2>
+</div>
+
+	<p id=“portfolioText”><i>Just a dumb little fortune teller.</i></p>
+	
+	<!-- Rotate thru these using JS and .hidden prop -->
+	<!-- Also what about doing this on top of a fortune cookie image? -->
+	<p id="fortuneCookie1">Fortune 1</p>
+	<p id="fortuneCookie2">Fortune 2</p>
+	<p id="fortuneCookie3">Fortune 3</p>
+	<p id="fortuneCookie4">Fortune 4</p>
+	<p id="fortuneCookie5">Fortune 5</p>
+	<p id="fortuneCookie6">Fortune 6</p>
+	<p id="fortuneCookie7">Fortune 7</p>
+
+	<div id="portfolioButton"><a href="#" class="buttonLink">See my destiny</a></div>
+
+</section>
+
+
+<section class='portfolioItem'></section>
+
+<!-- Other ideas for portfolio things include: History of Tesnov, vegan recipe book -->
+
+
+</main>
+
+
+<footer>
+<h3>Made with love in &#127464&#127487</h3><br>
+</footer>
+
 </body>
+
 </html>

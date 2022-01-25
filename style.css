@@ -1,3 +1,126 @@
+/* Generally speaking... */
+
+@font-face {
+    font-family: "LynoJean";
+    src: url("/resources/LynoJean.otf") format("opentype");
+  }
+
 * {
-    font: 'Times';
+    margin: auto;
+    color: #333333;
+}
+
+body {
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    background-color: royalblue;
+}
+
+a {
+    text-decoration: none;
+    color: #4290CF;
+}
+
+
+/* Header & Main */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color:red;
+    padding: 2em 5em;
+}
+
+#navLogo {
+    font-family: LynoJean, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #333333;
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+}
+
+#navLink {
+    color: #333333;
+    font-size: 25px;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+main {
+    background-color:salmon;
+    padding: 10em 5em 5em 5em;
+}
+
+
+/* Intro box */
+
+#introBox {
+    background-color: limegreen;
+    height:auto;
+    margin-bottom: 5em;
+}
+
+#introImage {
+    border-width:10px; 
+    border-style: solid; 
+    width: 50%; 
+    float: left; 
+    margin-right: 2em;
+}
+
+#introHeader {
+    display: inline;
+    font-family: LynoJean;
+}
+
+
+/* Portfolio item styles */
+
+#portfolioTitleOver {
+    text-align: center;
+    background-color: thistle;
+    position: fixed;
+    top: 100px;
+}
+
+#portfolioTitleUnder {
+    font-family: LynoJean;
+    position: relative;
+    top: -100px;
+}
+
+.portfolioItem {
+    background-color: yellow;
+    width: auto;
+    height: auto;
+}
+
+#portfolioText {
+    text-align: center;
+}
+
+#portfolioButton {
+    width: 200px;
+    background-color: violet;
+    text-align: center;
+    margin: 1em 2em;
+    position: absolute;
+    left: 30%;
+    padding: 1em;
+}
+
+.buttonLink {
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Foot fetish */
+
+footer {
+    background: sienna;
+    padding: 2em 5em;
+    text-align: center;
+    font-weight: 400;
 }
