@@ -1,3 +1,5 @@
+/* Try later to recompile this in Sass */
+
 /* Generally speaking... */
 
 @font-face {
@@ -39,6 +41,7 @@ header {
     display: inline-block;
     float: left;
     margin-right: 1em;
+    background-color: blue;
 }
 
 #navLink {
@@ -46,6 +49,7 @@ header {
     font-size: 25px;
     margin-right: 1em;
     text-decoration: none;
+    background-color: blue;
 }
 
 main {
@@ -56,18 +60,28 @@ main {
 
 /* Intro box */
 
-#introBox {
+.introBox {
     background-color: limegreen;
     height:auto;
     margin-bottom: 5em;
+    display: flex;
 }
 
-#introImage {
-    border-width:10px; 
-    border-style: solid; 
-    width: 50%; 
-    float: left; 
-    margin-right: 2em;
+.introImage {
+    background-color: blueviolet;
+    min-width: 50%;
+    max-width: 1000px;
+    height: 300px;
+    flex-grow: 1;
+    background-image: url('/resources/aboutImage.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.introText {
+    background-color: coral;
+    flex-grow: 1;
+    align-items: flex-start;
 }
 
 #introHeader {
