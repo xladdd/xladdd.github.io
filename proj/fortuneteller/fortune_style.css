@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 40px;
 }
 
 body {
@@ -22,15 +22,14 @@ h1 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 2rem;
-
 }
 
 p {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width:1600px) {
     html {
         font-size: 24px;
     }
