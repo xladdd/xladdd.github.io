@@ -1,139 +1,134 @@
-/* Try later to recompile this in Sass */
-
-/* Generally speaking... */
-
 @font-face {
     font-family: "LynoJean";
     src: url("/resources/LynoJean.otf") format("opentype");
-  }
+}
+
+#commentBox {
+    position: absolute;
+    right: 0;
+    background-color: coral;
+    float: right;
+    text-align: right;
+    font-size: 0.5rem;
+}
 
 * {
-    margin: auto;
-    color: #333333;
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding:0;
+    margin:0;
+}
+
+html {
+    font-size: 14px;
+    color: hsla(42,0,20,1);
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Space Mono, Arial, Helvetica, sans-serif;
-    background-color: royalblue;
+    margin: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #FFFCF6;
+    width: 343px;
 }
-
-a {
-    text-decoration: none;
-    color: #4290CF;
-}
-
-
-/* Header & Main */
 
 header {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color:red;
-    padding: 2em 5em;
+    height: 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin:0;
+    box-sizing:border-box;
+    width: 344px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.071rem;
+    float: right;
+    margin-left: 2rem;
 }
 
 #navLogo {
-    font-family: LynoJean, Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: #333333;
-    display: inline-block;
+    font-family: Lyno;
+    font-size: 1.786rem;
     float: left;
-    margin-right: 1em;
-    background-color: blue;
-}
-
-#navLink {
-    color: #333333;
-    font-size: 25px;
-    margin-right: 1em;
-    text-decoration: none;
-    background-color: blue;
+    margin-left:0;
 }
 
 main {
-    background-color:salmon;
-    padding: 10em 5em 5em 5em;
-}
-
-
-/* Intro box */
-
-.introBox {
-    background-color: limegreen;
-    height:auto;
-    margin-bottom: 5em;
-    display: flex;
-}
-
-.introImage {
-    background-color: blueviolet;
-    min-width: 50%;
-    max-width: 1000px;
-    height: 300px;
-    flex-grow: 1;
-    background-image: url('/resources/aboutImage.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.introText {
-    background-color: coral;
-    flex-grow: 1;
-    align-items: flex-start;
-}
-
-#introHeader {
-    display: inline;
-    font-family: LynoJean;
-}
-
-
-/* Portfolio item styles */
-
-#portfolioTitleOver {
-    text-align: center;
-    background-color: thistle;
-    position: fixed;
+    position: relative;
     top: 100px;
 }
 
-#portfolioTitleUnder {
-    font-family: LynoJean;
-    position: relative;
-    top: -100px;
+#introBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+#introImage {
+    min-width: 344px;
+    height: 227px;
+    background-color: #FFF1D0;
+    margin-bottom: 24px;
+}
+
+#mainTitle {
+    font-family: Lyno Jean;
+    font-size: 2.857rem;
+    color: #529D96;
+    margin-bottom: 24px;
+}
+
+#link {
+    color: #4290CF;
+    text-decoration: underline;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .portfolioItem {
-    background-color: yellow;
-    width: auto;
-    height: auto;
+    margin-bottom: 50px;
 }
 
-#portfolioText {
+#squiggle {
+    height: 35px;
+    width: 127px;
+    background-color: black;
+    /* Do not forget to adjust height & width appropriately !!!
+    background-image: url('');
+    */
+    margin: auto;
+}
+
+.PI-title {
+    margin: auto;
+    justify-content: center;
+    background-color: cyan;
     text-align: center;
 }
 
-#portfolioButton {
-    width: 200px;
-    background-color: violet;
-    text-align: center;
-    margin: 1em 2em;
-    position: absolute;
-    left: 30%;
-    padding: 1em;
+.PI-title-under {
+    font-family: Lyno;
+    font-size: 2.857rem;
+    color: #FFF0D2;
 }
 
-.buttonLink {
-    color: #333333;
-    font-weight: bold;
+.PI-title-over {
+    font-weight: 1400;
+    font-size: 1.714rem;
+    position: relative;
+    top: -50px;
 }
-
-/* Foot fetish */
 
 footer {
-    background: sienna;
     padding: 2em 5em;
     text-align: center;
     font-weight: 400;
