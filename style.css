@@ -10,6 +10,7 @@
     float: right;
     text-align: right;
     font-size: 0.5rem;
+    z-index: 100;
 }
 
 * {
@@ -41,6 +42,8 @@ header {
     margin:0;
     box-sizing:border-box;
     width: 344px;
+    background-color: #FFFCF6;
+    z-index: 80;
 }
 
 a {
@@ -56,7 +59,7 @@ nav li {
 }
 
 #navLogo {
-    font-family: Lyno;
+    font-family: "LynoJean", Arial, Helvetica, sans-serif;
     font-size: 1.786rem;
     float: left;
     margin-left:0;
@@ -81,7 +84,7 @@ main {
 }
 
 #mainTitle {
-    font-family: Lyno Jean;
+    font-family: "LynoJean", Arial, Helvetica, sans-serif;
     font-size: 2.857rem;
     color: #529D96;
     margin-bottom: 24px;
@@ -95,28 +98,28 @@ main {
 }
 
 .portfolioItem {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 #squiggle {
     height: 35px;
     width: 127px;
-    background-color: black;
+    background-color: #529D96;
     /* Do not forget to adjust height & width appropriately !!!
     background-image: url('');
     */
-    margin: auto;
+    margin: auto; /* Centers it*/
 }
 
 .PI-title {
     margin: auto;
     justify-content: center;
-    background-color: cyan;
     text-align: center;
+    height:48px;
 }
 
 .PI-title-under {
-    font-family: Lyno;
+    font-family: "LynoJean", Arial, Helvetica, sans-serif;
     font-size: 2.857rem;
     color: #FFF0D2;
 }
@@ -125,11 +128,19 @@ main {
     font-weight: 1400;
     font-size: 1.714rem;
     position: relative;
-    top: -50px;
+    top: -68px;
+}
+
+.PI-text {
+    font-style: italic;
+    text-align: center;
 }
 
 footer {
-    padding: 2em 5em;
+    position: relative;
+    padding: 1rem;
     text-align: center;
+    font-style: ;
     font-weight: 400;
+    margin-top: 150px; /*I have to do this because <main> is also relative, with 100px shift from top because of the header + 50 to make up for weird thing it's doing with the last item*/
 }
