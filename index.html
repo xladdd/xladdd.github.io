@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body><div id="page-wrap">
 
 <section id="commentBox">
     <p>version 0 of website.</p>
@@ -22,8 +22,8 @@
     <nav>
         <ul>
             <li id="navLogo">Vlad Frolov</li>
-            <li><a href="https://github.com/vladdjpg">GitHub</a></li>
-            <li><a href="http://vladdjpg.github.io/about.html">About</a></li>
+            <li><a href="https://github.com/vladdjpg" id="navlink">GitHub</a></li>
+            <li><a href="http://vladdjpg.github.io/about.html" id="navlink">About</a></li>
         </ul>
     </nav>
 </header>
@@ -33,34 +33,75 @@
     <div id="introImage"></div>
     <div id="introText">
         <p id="mainTitle">Hi, I’m Vlad, <br>a designer who codes.</p>
-        <p>This is the stuff I've done. Please have a look <a id="link" href="/index.html">here</a>. I also like dogs. Check out my <a id="link">dog photo gallery</a>.</p>
+        <p>This is where I'll put a description. I'll write a few things and perhaps put a link <a id="link" href="/index.html">here</a>. And then maybe <a id="link" href="/index.html">another one</a>.</p>
     </div>
 </div>
 
-<div class="portfolioItem"> <!--Tesnov-->
-    <div id="squiggle"></div>
-    <div class="PI-title">
-        <H1 class="PI-title-under">FORTUNATOR</H1>
-        <H1 class="PI-title-over">FORTUNATOR</H1>
+<!-- ============= Portfolio Item Template =============
+
+<div class="portfolioItem"> 
+    <div id="PIbody">
+        <div id="squiggle" class="squig1"></div>
+        <div class="PI-title">
+            <H1 class="PI-title-under">Test Item</H1>
+            <H1 class="PI-title-over">Test Item</H1>
+        </div>
+        <p class="PI-text">Some excited placeholder text!<br><b>HTML CSS JS</b></p>
+        <div class="PI-illustr mobile" id="testItemIll">Some text here</div>
+        <p id="PI-button"><a href="">Test it!</a></p>
     </div>
-    <p class="PI-text">Just a dumb little fortune teller.</p>
+    <div class='wideSrcIll'>
+        <div class="PI-illustr" id="testItemIll">Some text here</div> 
+    </div>     
+</div>
+============= Portfolio Item Template ============= -->
+
+<!--Portfolio item 2-->
+<div class="portfolioItem"> 
+    <div id="PIbody">
+        <div id="squiggle" class="squig1"></div>
+        <div class="PI-title">
+            <H1 class="PI-title-under">Test Item</H1>
+            <H1 class="PI-title-over">Test Item</H1>
+        </div>
+        <p class="PI-text">Some excited placeholder text!<br><b>HTML CSS JS</b></p>
+        <div class="PI-illustr mobile" id="testItemIll">Some text here</div>
+        <p id="PI-button"><a href="">Test it!</a></p>
+    </div>
+    <div class='wideSrcIll'>
+        <div class="PI-illustr" id="testItemIll">Some text here</div> 
+    </div>     
 </div>
 
-<div class="portfolioItem"> <!--Fortunator-->
-    <div id="squiggle"></div>
-    <div class="PI-title">
-        <H1 class="PI-title-under">FORTUNATOR</H1>
-        <H1 class="PI-title-over">FORTUNATOR</H1>
+<!--Fortunator-->
+<div class="portfolioItem"> 
+    <div id="PIbody">
+        <div id="squiggle" class="squig2"></div>
+        <div class="PI-title">
+            <H1 class="PI-title-under">FORTUNATOR</H1>
+            <H1 class="PI-title-over">FORTUNATOR</H1>
+        </div>
+        <p class="PI-text">Just a dumb little fortuneteller.<br><b>HTML CSS JS</b></p>
+        <div class="PI-illustr mobile" id="fortuneIll">you shall find peace</div>
+        <p id="PI-button"><a href="/proj/fortunator.html">Try it!</a></p>
     </div>
-    <p class="PI-text">Just a dumb little fortune teller.</p>
+    <div class='wideSrcIll'>
+        <div class="PI-illustr" id="fortuneIll">you shall find peace</div> 
+    </div>     
 </div>
+
+<div id="seeMore">See more here</div>
 
 </main>
 
 <footer>
+    <div id="viewSource">
+        <p>See this page in <a href="https://github.com/vladdjpg/vladdjpg.github.io/blob/main/index.html" id="link">GitHub</a> / <a href="https://www.figma.com/file/DqnWkuBkpmpTnMTwNuGTZ0/My-Portfolio-Website?node-id=0%3A1" id="link">Figma</a></p><br>
+    </div>
+
     <p>Made with love in &#127464&#127487</p>
 </footer>
 
-</body>
+</div></body>
 
 </html>
