@@ -56,7 +56,7 @@ return theMessage;
 
 function showFortune(){
   fortune.innerHTML = generateMessage();
-  button.innerHTML = "Try it again!";
+  button.innerHTML = "try again";
   button.style.cursor = "default";
   // button.removeEventListener('click', showFortune); 
 // This last line removes the button functionality after 1 click
