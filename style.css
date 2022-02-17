@@ -207,6 +207,33 @@ main {
     display:none;
 }
 
+h2 {
+	font-size: 1.5rem;
+    display: inline;
+    font-weight: bold;
+    color: 
+}
+
+.abilities li {
+	display: inline;
+	font-weight: bold;
+	margin-right: 15px;
+    text-decoration: none;
+}
+
+#spark {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#highlight {
+	background-color: #FFF0D2;
+	color: #529D96;
+	font-weight: bold;
+}
+
+
 #viewSource{
     font-style: italic;
     font-size: 0.65rem;
