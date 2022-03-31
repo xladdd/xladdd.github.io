@@ -1,7 +1,6 @@
 // F I L L E R Z 
 //==============
 
-
 document.getElementById('header').innerHTML = `
 <div class='marquee' role="presentation">
         <div class='track' role="presentation">
@@ -228,6 +227,5 @@ document.querySelectorAll('.timerTrigger').forEach(item => {
 })
 
 const method = document.getElementById('method').querySelectorAll('li');
-
 
 method.forEach(item=>{item.addEventListener('click', strikethru)})

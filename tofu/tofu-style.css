@@ -276,8 +276,22 @@ body .welcMarquee h1 {
 #welcBody img {
     width:140px;
     padding: 50px 0px;
+    animation: welcFloat 2s ease-in-out alternate infinite;
+}
+
+@keyframes welcFloat {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
 }
 
 .welcWrap {
     text-align: center;
+}
+
+.welcMenu {
+    background-color: none;
 }
