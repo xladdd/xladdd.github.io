@@ -128,7 +128,13 @@ h2 {
     font-weight: bold;
     margin: 25px 0px;
     position: relative;
-    top:-200px;
+    top:-406px;
+}
+
+h3 {
+    font-family: 'Podkova', 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 35px;
 }
 
 #page-wrap {
@@ -146,7 +152,6 @@ main {
 #image {
     width: 350px;
     height: 200px;
-    border: black 2px solid;
 }
 
 #image-shader {
@@ -155,13 +160,21 @@ main {
     width: 350px;
     height: 200px;
     position: relative;
-    top:-200px;
+    top:-206px;
+}
+
+#image-border {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top:-406px;
+    border: #3B3B3B 3px solid;
 }
 
 #description {
     font-style: italic;
     position: relative;
-    top:-200px;
+    top:-406px;
 }
 
 #method {
@@ -169,7 +182,11 @@ main {
     padding-left: 25px;
     line-height: 1.5rem;
     position: relative;
-    top:-200px;
+    top:-406px;
+}
+
+#method li {
+text-decoration: none;
 }
 
 /* T I M E R */
@@ -219,5 +236,48 @@ main {
 
 footer {
     position: relative;
-    top:150px;
+    padding:50px 0px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Podkova', 'Times New Roman', Times, serif;
+    position: relative;
+    top: -206px;
+}
+
+footer a {
+    text-decoration: underline dotted;
+    color: #3B3B3B;
+}
+
+/* W E L C O M E  P A G E */
+
+.welcMarquee {
+    color: #C8C83B3B3BC8;
+    margin-top: 30px;
+    font-family: 'Podkova', 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-top:80px;
+}
+
+body .welcMarquee h1 {
+    font-weight: lighter;
+}
+
+#welcBody {
+    background-color: #FFB388;
+}
+
+#welcQuote {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+#welcBody img {
+    width:140px;
+    padding: 50px 0px;
+}
+
+.welcWrap {
+    text-align: center;
 }
