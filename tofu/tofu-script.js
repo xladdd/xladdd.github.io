@@ -1,11 +1,64 @@
 // F I L L E R Z 
 //==============
 
-//document.getElementById('head').innerHTML =  "<title>TOFU!</title><!-- ** Favicon **<link rel='icon' type='image/x-icon' href='/images/favicon.ico'>--><meta name='viewport' content='width=device-width, initial-scale=1' /><link href='./tofu-style.css' rel='stylesheet'><!-- IDK if this does anything <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'/> --><link href='https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap' rel='stylesheet'><script src='./testscript.js' async></script>";
 
-//document.getElementById('header').innerHTML = "<div class='marquee'><div class='track'><div class='content' id='marquee-content'>&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace</div></div></div><div id='arrow-box'><ul class='head-arrows'><li>↓</li><li>↓</li><li>↓</li></ul></div><div id='border'></div>";
+document.getElementById('header').innerHTML = `
+<div class='marquee' role="presentation">
+        <div class='track' role="presentation">
+          <div class='content' id='marquee-content' role="presentation">&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace
+            </div>
+        </div>
+    </div>
 
+    <div id='arrow-box' role="presentation">
+        <ul class='head-arrows'><li>↓</li><li>↓</li><li>↓</li></ul>
+    </div>
 
+    <div id='border' role="presentation"></div>
+`;
+
+document.getElementById('nav').innerHTML = `
+<div id='nav-box' role="presentation">
+        <div id='page-wrap' role="presentation">
+
+            <h1 id="varMenu">Vaření</h1>
+            <div id="varList" class="menuList">
+                <a href="/tofu/vareni/livance.html">livance!</a>
+                <a href="/tofu/vareni/trhanec.html">trhanec!</a>
+                <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
+                <a href="/tofu/vareni/dusena-mrkev.html">dušena mrkev!</a>
+                <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
+                <a href="/tofu/vareni/mleka.html">mléka!</a>
+                <a href="/tofu/vareni/zaklady.html">základy!</a>
+            </div>
+
+            <h1 id="pecMenu">Pečení</h1>
+            <div id="pecList" class="menuList">
+                <a href="/tofu/peceni/babka.html">babka!</a>
+                <a href="/tofu/peceni/bananabread.html">bananabread!</a>
+                <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchta!</a>
+                <a href="/tofu/peceni/housky.html">housky!</a>
+                <a href="/tofu/peceni/raw-kulicky.html">sladké raw kuličky!</a>
+            </div>
+
+            <h1 id="konMenu">Konzervace</h1>
+            <div id="konList" class="menuList">
+                <a href="/tofu/konzervace/kimci.html">kimči a laktofermentace!</a>
+                <a href="/tofu/konzervace/nakladani.html">nakládaní!</a>
+                <a href="/tofu/konzervace/kombuca.html">kombůča!</a>
+             </div>
+
+        <button id="hide-menu">↑</button>
+
+        </div>
+    </div>
+    <div id='border'></div>
+    <div id='blank-space'></div>
+`
+
+document.getElementById('footer').innerHTML = `<p><b>T O F U !</b><br>
+Pro líné vegany &#128154;<br><br>
+<i>...a další <a href="http://vladdjpg.github.io/">Lahůdky</a></i>`;
 
 
 //Initialising
@@ -31,7 +84,7 @@ identity = identity[1].charAt(1) + identity[1].charAt(2) + identity[1].charAt(3)
 switch (identity) {
 case 'var':
 //Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = `&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace`;
+document.getElementById('marquee-content').innerHTML=`&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace;`
 //Set up highlight
     varList.style.display = "grid";
     varMenu.style.textDecoration = "underline";
@@ -40,7 +93,7 @@ case 'var':
     break;
 case 'pec':
 //Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = `&nbsp;Vaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>Konzervace`;
+    document.getElementById('marquee-content').innerHTML = ` &nbsp;Vaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>Konzervace`;
 //Set up highlight
     pecList.style.display = "grid";
     pecMenu.style.textDecoration = "underline";
@@ -49,7 +102,7 @@ case 'pec':
     break;
 case 'kon':
 //Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>`;
+    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>`;
 //Set up highlight
     konList.style.display = "grid";
     konMenu.style.textDecoration = "underline";
@@ -57,7 +110,7 @@ case 'kon':
     pecMenu.style.color = "#C8C8C8";
     break;
 default: 
-    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervace`;
+    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervace`;
     varMenu.style.color = "#3B3B3B";
     pecMenu.style.color = "#3B3B3B";
     konMenu.style.color = "#3B3B3B";
@@ -127,7 +180,9 @@ function timerFunc() {
     timerStrip.style.display = 'block';
     timerStrip.style.animation = `timerAnim ${timerTime + 2}s linear`;
 
-    timerTextChange(timerTime, clicked);   
+    if (timerTime > 10) {
+        timerTextChange(timerTime, clicked); 
+    }  
 }
 
 function timerTextChange(time, click){
@@ -150,6 +205,15 @@ function timerTextChange(time, click){
     }, 1000);
 }
 
+function strikethru() {
+    const target = event.target;
+    if (target.style.textDecoration === "line-through") {
+        target.style.textDecoration = "none";
+    } else {
+        target.style.textDecoration = "line-through";
+    }
+}
+
 //Adding event listeners
 //Showing/Hiding Menu
 document.getElementById('header').addEventListener('click', showMenu);
@@ -163,47 +227,7 @@ document.querySelectorAll('.timerTrigger').forEach(item => {
     item.addEventListener('click', timerFunc)
 })
 
+const method = document.getElementById('method').querySelectorAll('li');
 
 
-
-
-
-/*
-function hiderFunction() {
-    console.log("started hider function")
-    if (Event.target.style.color = "#3B3B3B") {
-    //If it's active, deactivate
-    Event.target.style.color = ""#C8C8C8"";
-    Event.target.style.textDecoration = "none";
-    switch (Event.target.innerHTML) {
-        case ('Vaření'):
-            document.getElementsById('vareni-list').style.display = "none";
-            break;
-        case ('Pečení'):
-            document.getElementsById('peceni-list').style.display = "none";
-            break;
-        case ('Konzervace'):
-            document.getElementsById('konzervace-list').style.display = "none";
-            break;
-        default:
-            break;   
-    }
-} else if (Event.target.style.color = ""#C8C8C8"") {
-    //If it's NOT active, activate
-    Event.target.style.color = "#3B3B3B";
-    Event.target.style.textDecoration = "underline";
-    switch (Event.target.innerHTML) {
-        case ('Vaření'):
-            document.getElementsById('vareni-list').style.display = "grid";
-            break;
-        case ('Pečení'):
-            document.getElementsById('peceni-list').style.display = "grid";
-            break;
-        case ('Konzervace'):
-            document.getElementsById('konzervace-list').style.display = "grid";
-            break;
-        default:
-            break;   
-    }
-}
-}*/
+method.forEach(item=>{item.addEventListener('click', strikethru)})
