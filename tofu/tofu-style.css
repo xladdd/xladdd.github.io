@@ -256,7 +256,7 @@ footer a {
     margin-top: 30px;
     font-family: 'Podkova', 'Times New Roman', Times, serif;
     font-weight: lighter;
-    padding-top:80px;
+    padding-top:40px;
 }
 
 body .welcMarquee h1 {
@@ -294,4 +294,19 @@ body .welcMarquee h1 {
 
 .welcMenu {
     background-color: none;
+}
+
+.welcList {
+    text-align: left;
+    display: grid;
+    grid-template: repeat(4, 30px) / repeat(2,250px);
+    gap: 10px 10px;
+    grid-auto-flow: column;
+    margin-bottom: 60px;
+    overflow:scroll;
+}
+
+.welcList a {
+    text-decoration: none;
+    color: #3B3B3B;
 }
