@@ -9,47 +9,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link href='/tofu/tofu-style.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
-    <script src='/tofuWelcScript.js' async></script>
 </head> 
-
-<nav id='nav' role="presentation">
-    <div id='nav-box' role="presentation">
-        <div id='page-wrap' role="presentation">
-
-            <h1 id="varMenu">Vaření</h1>
-            <div id="varList" class="menuList">
-                <a href="/tofu/vareni/livance.html">livance!</a>
-                <a href="/tofu/vareni/trhanec.html">trhanec!</a>
-                <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
-                <a href="/tofu/vareni/dusena-mrkev.html">dušena mrkev!</a>
-                <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
-                <a href="/tofu/vareni/mleka.html">mléka!</a>
-                <a href="/tofu/vareni/zaklady.html">základy!</a>
-            </div>
-
-            <h1 id="pecMenu">Pečení</h1>
-            <div id="pecList" class="menuList">
-                <a href="/tofu/peceni/babka.html">babka!</a>
-                <a href="/tofu/peceni/bananabread.html">bananabread!</a>
-                <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchta!</a>
-                <a href="/tofu/peceni/housky.html">housky!</a>
-                <a href="/tofu/peceni/raw-kulicky.html">sladké raw kuličky!</a>
-            </div>
-
-            <h1 id="konMenu">Konzervace</h1>
-            <div id="konList" class="menuList">
-                <a href="/tofu/konzervace/kimci.html">kimči a laktofermentace!</a>
-                <a href="/tofu/konzervace/nakladani.html">nakládaní!</a>
-                <a href="/tofu/konzervace/kombuca.html">kombůča!</a>
-             </div>
-
-        <button id="hide-menu">↑</button>
-
-        </div>
-    </div>
-    <div id='border'></div>
-    <div id='blank-space'></div>
-</nav>
 
 <body id="welcBody">
     <div class='welcMarquee' role="presentation">
@@ -60,10 +20,33 @@
     </div>
     <div id='page-wrap' class="welcWrap">
         <img src="/tofu/images/welcIll.png" alt="illustration" presentation="none">
-        <p id="welcQuote">"Co ty vegani vlástně jedí?"</p>
-        <h3 class="welcMenu">Vaření</h3>
-        <h3 class="welcMenu">Pečení</h3>
-        <h3 class="welcMenu">Konzervace</h3>
+        <p id="welcQuote">"Co ty vegani vlastně jedí?"</p>
+
+        <h3 id="varMenu">Vaření</h3>
+        <div class="welcList" id="varLinks">
+            <a href="/tofu/vareni/livance.html">livance!</a>
+            <a href="/tofu/vareni/trhanec.html">trhanec!</a>
+            <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
+            <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
+            <a href="/tofu/vareni/mleka.html">mléka!</a>
+            <a href="/tofu/vareni/zaklady.html">základy!</a>
+        </div>
+
+        <h3 id="pecMenu">Pečení</h3>
+        <div class="welcList" id="pecLinks">
+            <a href="/tofu/peceni/babka.html">babka!</a>
+            <a href="/tofu/peceni/bananabread.html">bananabread!</a>
+            <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchta!</a>
+            <a href="/tofu/peceni/housky.html">housky!</a>
+            <a href="/tofu/peceni/raw-kulicky.html">sladké raw kuličky!</a>
+        </div>
+
+        <h3 id="konMenu">Konzervace</h3>
+        <div class="welcList" id="konLinks">
+            <a href="/tofu/konzervace/kimci.html">kimči a laktofermentace!</a>
+            <a href="/tofu/konzervace/nakladani.html">nakládaní!</a>
+            <a href="/tofu/konzervace/kombuca.html">kombůča!</a>
+         </div>
 </div><!--END OF DIV PAGE WRAP--></body>
 
 </html>
