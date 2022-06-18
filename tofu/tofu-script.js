@@ -25,6 +25,7 @@ document.getElementById('nav').innerHTML = `
                 <a href="/tofu/vareni/livance.html">livance!</a>
                 <a href="/tofu/vareni/trhanec.html">trhanec!</a>
                 <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
+                <a href="/tofu/vareni/dusena-mrkev.html">dušena mrkev!</a>
                 <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
                 <a href="/tofu/vareni/mleka.html">mléka!</a>
                 <a href="/tofu/vareni/kimci.html">kimči a laktofermentace!</a>
