@@ -4,7 +4,7 @@
 document.getElementById('header').innerHTML = `
 <div class='marquee' role="presentation">
         <div class='track' role="presentation">
-          <div class='content' id='marquee-content' role="presentation">&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace
+          <div class='content' id='marquee-content' role="presentation">&nbsp;<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení
             </div>
         </div>
     </div>
@@ -39,13 +39,6 @@ document.getElementById('nav').innerHTML = `
                 <a href="/tofu/peceni/housky.html">housky!</a>
                 <a href="/tofu/peceni/raw-kulicky.html">sladké raw kuličky!</a>
             </div>
-
-            <h1 id="konMenu">Konzervace</h1>
-            <div id="konList" class="menuList">
-                <a href="/tofu/konzervace/kimci.html">kimči a laktofermentace!</a>
-                <a href="/tofu/konzervace/nakladani.html">nakládaní!</a>
-                <a href="/tofu/konzervace/kombuca.html">kombůča!</a>
-             </div>
 
         <button id="hide-menu">↑</button>
 
@@ -83,7 +76,7 @@ identity = identity[1].charAt(1) + identity[1].charAt(2) + identity[1].charAt(3)
 switch (identity) {
 case 'var':
 //Change marquee text (change inner url of marquee id to correct bold)
-document.getElementById('marquee-content').innerHTML=`&nbsp;<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace<b>Vaření</b>PečeníKonzervace;`
+document.getElementById('marquee-content').innerHTML=`&nbsp;<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení<b>Vaření</b>Pečení;`
 //Set up highlight
     varList.style.display = "grid";
     varMenu.style.textDecoration = "underline";
@@ -92,7 +85,7 @@ document.getElementById('marquee-content').innerHTML=`&nbsp;<b>Vaření</b>Peče
     break;
 case 'pec':
 //Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = ` &nbsp;Vaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>KonzervaceVaření<b>Pečení</b>Konzervace`;
+    document.getElementById('marquee-content').innerHTML = ` &nbsp;Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>Vaření<b>Pečení</b>`;
 //Set up highlight
     pecList.style.display = "grid";
     pecMenu.style.textDecoration = "underline";
@@ -101,7 +94,7 @@ case 'pec':
     break;
 case 'kon':
 //Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>VařeníPečení<b>Konzervace</b>`;
+    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>`;
 //Set up highlight
     konList.style.display = "grid";
     konMenu.style.textDecoration = "underline";
@@ -109,7 +102,7 @@ case 'kon':
     pecMenu.style.color = "#C8C8C8";
     break;
 default: 
-    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervaceVařeníPečeníKonzervace`;
+    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečení`;
     varMenu.style.color = "#3B3B3B";
     pecMenu.style.color = "#3B3B3B";
     konMenu.style.color = "#3B3B3B";
