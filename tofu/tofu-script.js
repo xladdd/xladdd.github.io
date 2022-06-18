@@ -25,8 +25,8 @@ document.getElementById('nav').innerHTML = `
                 <a href="/tofu/vareni/livance.html">livance!</a>
                 <a href="/tofu/vareni/trhanec.html">trhanec!</a>
                 <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
-                <a href="/tofu/vareni/dusena-mrkev.html">dušena mrkev!</a>
                 <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
+                <a href="/tofu/vareni/kimci.html">kimči!</a>
                 <a href="/tofu/vareni/mleka.html">mléka!</a>
                 <a href="/tofu/vareni/zaklady.html">základy!</a>
             </div>
@@ -37,7 +37,6 @@ document.getElementById('nav').innerHTML = `
                 <a href="/tofu/peceni/bananabread.html">bananabread!</a>
                 <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchta!</a>
                 <a href="/tofu/peceni/housky.html">housky!</a>
-                <a href="/tofu/peceni/raw-kulicky.html">sladké raw kuličky!</a>
             </div>
 
         <button id="hide-menu">↑</button>
@@ -56,10 +55,8 @@ Pro líné vegany &#128154;<br><br>
 //Initialising
 const varMenu = document.getElementById('varMenu');
 const pecMenu = document.getElementById('pecMenu');
-const konMenu = document.getElementById('konMenu');
 const varList = document.getElementById('varList');
 const pecList = document.getElementById('pecList');
-const konList = document.getElementById('konList');
 
 let timerStrip = document.getElementById('timerStrip');
 let timerStripAnim = document.getElementById('timerStrip').style.animation;
@@ -70,7 +67,7 @@ const url = window.location.href;
 let identity = url.split("/tofu");
 //console.log(identity);
 identity = identity[1].charAt(1) + identity[1].charAt(2) + identity[1].charAt(3); 
-//identity can then equal var, pec, or kon
+//identity can then equal var or pec
 //console.log(identity);
 
 switch (identity) {
@@ -81,7 +78,6 @@ document.getElementById('marquee-content').innerHTML=`&nbsp;<b>Vaření</b>Peče
     varList.style.display = "grid";
     varMenu.style.textDecoration = "underline";
     pecMenu.style.color = "#C8C8C8";
-    konMenu.style.color = "#C8C8C8";
     break;
 case 'pec':
 //Change marquee text (change inner url of marquee id to correct bold)
@@ -90,22 +86,11 @@ case 'pec':
     pecList.style.display = "grid";
     pecMenu.style.textDecoration = "underline";
     varMenu.style.color = "#C8C8C8";
-    konMenu.style.color = "#C8C8C8";
-    break;
-case 'kon':
-//Change marquee text (change inner url of marquee id to correct bold)
-    document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>VařeníPečení<b></b>`;
-//Set up highlight
-    konList.style.display = "grid";
-    konMenu.style.textDecoration = "underline";
-    varMenu.style.color = "#C8C8C8";
-    pecMenu.style.color = "#C8C8C8";
     break;
 default: 
     document.getElementById('marquee-content').innerHTML = `&nbsp;VařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečeníVařeníPečení`;
     varMenu.style.color = "#3B3B3B";
     pecMenu.style.color = "#3B3B3B";
-    konMenu.style.color = "#3B3B3B";
 break;
 }
 
@@ -139,16 +124,7 @@ function pecToggle() {
         pecMenu.style.textDecoration = "none";
     }
 }
-function konToggle() {
-    if (konList.style.display === "none") {
-        konList.style.display = "grid";
-        konMenu.style.textDecoration = "underline";
-        konMenu.style.color = "#3B3B3B";
-    } else {
-        konList.style.display = "none";
-        konMenu.style.textDecoration = "none";
-    }
-}
+
 //===========================================
 
 
@@ -213,7 +189,6 @@ document.getElementById('hide-menu').addEventListener('click', hideMenu);
 document.getElementById('blank-space').addEventListener('click', hideMenu);
 varMenu.addEventListener('click', varToggle);
 pecMenu.addEventListener('click', pecToggle);
-konMenu.addEventListener('click', konToggle);
 
 document.querySelectorAll('.timerTrigger').forEach(item => {
     item.addEventListener('click', timerFunc)
