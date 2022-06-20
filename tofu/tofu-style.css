@@ -62,6 +62,18 @@ header {
     bottom:25px;
 }
 
+#noPhone {
+    background-color: #FFB388;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: 'Podkova', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 200px 100px;
+    font-size: 2rem;
+    display:none;
+}
+
 /* N A V I G A T I O N */
 
 nav {
@@ -101,6 +113,7 @@ nav #border {
 
 #hide-menu {
     text-align: center;
+    color: #3B3B3B;
     width:100%;
     margin-bottom: 40px;
     border: none;
@@ -309,4 +322,16 @@ body .welcMarquee h1 {
 .welcList a {
     text-decoration: none;
     color: #3B3B3B;
+}
+
+@media only screen and (min-width: 900px) {
+    #noPhone {
+        display:block;
+    }
+    .welcMarquee {
+        display: none;
+    }
+    img {
+        display: none;
+    }
 }
