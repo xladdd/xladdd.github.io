@@ -10,6 +10,7 @@ document.getElementById('header').innerHTML = `
     </div>
 
     <div id='arrow-box' role="presentation">
+    <ul class='head-arrows'><li>↓</li><li>↓</li><li>↓</li></ul>
     </div>
 
     <div id='border' role="presentation"></div>
