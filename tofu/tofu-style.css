@@ -303,7 +303,7 @@ body .welcMarquee h1 {
     gap: 10px 10px;
     grid-auto-flow: column;
     margin-bottom: 60px;
-    overflow:scroll;
+    overflow:hidden;
 }
 
 .welcList a {
