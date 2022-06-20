@@ -10,7 +10,6 @@ document.getElementById('header').innerHTML = `
     </div>
 
     <div id='arrow-box' role="presentation">
-        <ul class='head-arrows'><li>↓</li><li>↓</li><li>↓</li></ul>
     </div>
 
     <div id='border' role="presentation"></div>
@@ -26,7 +25,7 @@ document.getElementById('nav').innerHTML = `
                 <a href="/tofu/vareni/trhanec.html">trhanec!</a>
                 <a href="/tofu/vareni/tofu-mlety.html">tofu mlety!</a>
                 <a href="/tofu/vareni/kyselo-kari.html">kyselosladké kari!</a>
-                <a href="/tofu/vareni/kimci.html">kimči!</a>
+                <a href="/tofu/vareni/kimci.html">kimchi!</a>
                 <a href="/tofu/vareni/mleka.html">mléka!</a>
                 <a href="/tofu/vareni/zaklady.html">základy!</a>
             </div>
@@ -35,7 +34,7 @@ document.getElementById('nav').innerHTML = `
             <div id="pecList" class="menuList">
                 <a href="/tofu/peceni/babka.html">babka!</a>
                 <a href="/tofu/peceni/bananabread.html">bananabread!</a>
-                <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchta!</a>
+                <a href="/tofu/peceni/veliko-buchta.html">velikonoční buchty!</a>
                 <a href="/tofu/peceni/housky.html">housky!</a>
             </div>
 
@@ -49,7 +48,7 @@ document.getElementById('nav').innerHTML = `
 
 document.getElementById('footer').innerHTML = `<p><b>T O F U !</b><br>
 Pro líné vegany &#128154;<br><br>
-<i>...a další <a href="http://vladdjpg.github.io/">Lahůdky</a></i>`;
+<i>...a další <a href="http://vladdjpg.github.io/">lahůdky</a></i>`;
 
 
 //Initialising
