@@ -1,298 +1,408 @@
 @font-face {
-    font-family: "LynoJean";
-    src: url("/resources/LynoJean.otf") format("opentype");
-}
-
-#commentBox {
-    position: fixed;
-    right: 0;
-    background-color: coral;
-    float: right;
-    text-align: right;
-    font-size: 0.5rem;
-    z-index: 100;
+  font-family: "LynoJean";
+  src: url("/resources/LynoJean.otf") format("opentype");
 }
 
 * {
-    font-family: Space Mono, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    padding:0;
-    margin:0;
+  font-family: Space Mono, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 14px;
-    color: hsla(42,0,20,1);
-    box-sizing: border-box;
-    background-color: #FFFCF6;
+  font-size: 14px;
+  color: hsla(42, 0, 20, 1);
+  box-sizing: border-box;
+  background-color: #fffcf6;
 }
 
 #page-wrap {
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: #FFFCF6;
-    max-width: 343px;
-    margin:auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fffcf6;
+  max-width: 343px;
+  margin: auto;
 }
 
 header {
-    position: fixed;
-    height: 100px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    margin:0;
-    box-sizing:border-box;
-    width: 344px;
-    background-color: #FFFCF6;
-    z-index: 80;
+  position: fixed;
+  height: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 344px;
+  background-color: #fffcf6;
+  z-index: 80;
 }
 
 #navlink {
-    color: #333333;
-    text-decoration: none;
+  color: #333333;
+  text-decoration: none;
 }
 
 nav li {
-    display: inline;
-    font-size: 1.071rem;
-    float: right;
-    margin-left: 2rem;
-    margin-top: 4.5px;
+  display: inline;
+  font-size: 1.071rem;
+  float: right;
+  margin-left: 2rem;
+  margin-top: 4.5px;
 }
 
 #navLogo {
-    font-family: "LynoJean", Arial, Helvetica, sans-serif;
-    font-size: 1.786rem;
-    float: left;
-    margin-left:0;
-    margin-top: 0px;
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+}
+
+#navLogo a {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: #333333;
+  text-decoration: none;
+}
+
+#navLogo a:visited {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: #333333;
+  text-decoration: none;
 }
 
 main {
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
 }
 
 #introBox {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-    max-width: 344px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  max-width: 344px;
 }
 
-#introImage {
-    min-width: 344px;
-    height: 227px;
-    background-color: #FFF1D0;
-    margin-bottom: 24px;
+#intro-image {
+  min-width: 344px;
+  height: 227px;
+  background-color: #fff1d0;
+  margin-bottom: 24px;
+  background-size: cover;
+  background-image: url("/resources/indeximg.jpeg");
+  background-position-y: 85%;  
+  background-repeat: no-repeat;
+  opacity: 80%;
 }
+
+#about-image {
+    height: 227px;
+    background-color: #fff1d0;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-image: url("/resources/me.jpeg");
+    background-position-y: 85%;  
+    background-repeat: no-repeat;
+    opacity: 80%;
+  }
 
 #introText {
-    max-width: 344px;
+  max-width: 344px;
 }
 
 #mainTitle {
-    font-family: "LynoJean", Arial, Helvetica, sans-serif;
-    font-size: 2.857rem;
-    color: #529D96;
-    margin-bottom: 24px;
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 2.857rem;
+  color: #529d96;
+  margin-bottom: 24px;
 }
 
 #link {
-    color: #4290CF;
-    text-decoration: underline;
-    font-weight: 700;
-    font-style: italic;
+  color: #4290cf;
+  text-decoration: underline;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .portfolioItem {
-    margin-bottom: 60px;
-    align-items: center;
+  margin-bottom: 60px;
+  align-items: center;
 }
 
 #squiggle {
-    height: 25px;
-    width: 125px;
-    margin: auto; /* Centers it*/
+  height: 25px;
+  width: 125px;
+  margin: auto; /* Centers it*/
 }
 
 .squig1 {
-    background-image: url('/resources/squiggles/squig1.svg');
+  background-image: url("/resources/squiggles/squig1.svg");
 }
 
 .squig2 {
-    background-image: url('/resources/squiggles/squig2.svg');
+  background-image: url("/resources/squiggles/squig2.svg");
 }
 
 .PI-title {
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    height:48px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
 }
 
 .PI-title-under {
-    font-family: "LynoJean", Arial, Helvetica, sans-serif;
-    font-size: 2.857rem;
-    color: #FFF0D2;
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 2.857rem;
+  color: #fff0d2;
 }
 
 .PI-title-over {
-    font-weight: 1400;
-    font-size: 1.714rem;
-    position: relative;
-    top: -68px;
-    font-weight: bold;
+  font-weight: 1400;
+  font-size: 1.714rem;
+  position: relative;
+  top: -68px;
+  font-weight: bold;
+}
+
+.PI-title-over a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.714rem;
+  color: hsla(42, 0, 20, 1);
+}
+
+.PI-title-over a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.714rem;
+  color: black;
 }
 
 #PIbody {
-    width: 344px;
+  width: 344px;
 }
 
 .PI-text {
-    font-style: italic;
-    text-align: center;
+  text-align: center;
 }
 
 .PI-illustr {
-    height: 35px;
-    width: 165px;
-    margin: auto; /* Centers it*/
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    font-size: 10px;
+  height: 35px;
+  width: 165px;
+  margin: auto; /* Centers it*/
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  font-size: 10px;
 }
 
-#testItemIll { /* This ID should only change the BG of the illustration in both Mob and Desktop version */
-    text-align: center;
-    background-color: #529D96;
-    padding-top: 5px;
+.tags {
+  text-align: center;
+  margin: 10px auto;
 }
 
-#fortuneIll { /* This ID should only change the BG of the illustration in both Mob and Desktop version */
-    text-align: center;
-    background-image: url(/resources/squiggles/fortunescroll.svg);
-    padding-top: 8px;
-    padding-left: 5px;
+.tags-about {
+  margin: 10px auto;
+}
+
+.tags li {
+  font-size: 11px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+.tags-about li {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 4px;
+  margin: 10px 0;
+}
+
+.tags ul {
+  display: inline-block;
+}
+
+.tags-about ul {
+  display: inline-block;
+}
+
+.tags a {
+  text-decoration: none;
+}
+
+.tags-about a {
+  text-decoration: none;
+}
+
+.tags .tech {
+  color: #529d96;
+  border: 1px #529d96 solid;
+}
+
+.tags-about .tech {
+  color: #529d96;
+  border: 1px #529d96 solid;
+}
+
+.source a {
+  color: #298dd2;
+  text-decoration: none;
+}
+
+.tags .source {
+  color: #298dd2;
+  border: 1px #298dd2 solid;
+}
+
+.tags-about .source {
+  color: #298dd2;
+  border: 1px #298dd2 solid;
+  text-decoration: none;
+}
+
+#dotted {
+  border: 1px #529d96 dashed;
+}
+
+#testItemIll {
+  /* This ID should only change the BG of the illustration in both Mob and Desktop version */
+  text-align: center;
+  background-color: #529d96;
+  padding-top: 5px;
+}
+
+#fortuneIll {
+  /* This ID should only change the BG of the illustration in both Mob and Desktop version */
+  text-align: center;
+  background-image: url(/resources/squiggles/fortunescroll.svg);
+  padding-top: 8px;
+  padding-left: 5px;
 }
 
 #PI-button {
-    width: 160px;
-    margin: auto; /* Centers it*/
-    background-color: #298DD2;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 0.714rem; 
-    font-weight: bold;
+  width: 160px;
+  margin: auto; /* Centers it*/
+  background-color: #298dd2;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 #PI-button a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #seeMore {
-    text-align: center;
-    width: 160px;
-    border: 2px solid #298DD2;
-    margin: auto; /* Centers it*/
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 0.714rem; 
-    font-weight: bold;
-    background-color: #FFFCF6;
-    display:none;
+  text-align: center;
+  width: 160px;
+  border: 2px solid #298dd2;
+  margin: auto; /* Centers it*/
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.714rem;
+  font-weight: bold;
+  background-color: #fffcf6;
+  display: none;
 }
 
 h2 {
-	font-size: 1.5rem;
-    display: inline;
-    font-weight: bold;
-    color: 
+  font-size: 1.5rem;
+  display: inline;
+  font-weight: bold;
+  color: ;
 }
 
 .abilities li {
-	display: inline;
-	font-weight: bold;
-	margin-right: 15px;
-    text-decoration: none;
+  display: inline;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
 #spark {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  color: #298dd2;
+  text-decoration: none;
 }
 
 #highlight {
-	background-color: #FFF0D2;
-	color: #529D96;
-	font-weight: bold;
+  background-color: #fff0d2;
+  color: #529d96;
+  font-weight: bold;
 }
 
-
-#viewSource{
-    font-style: italic;
-    font-size: 0.65rem;
+#viewSource {
+  font-style: italic;
+  font-size: 0.65rem;
 }
 
 footer {
-    position: relative;
-    padding: 1rem;
-    text-align: center;
-    font-style: ;
-    font-weight: 400;
-    margin-top: 150px; /*I have to do this because <main> is also relative, with 100px shift from top because of the header + 50 to make up for weird thing it's doing with the last item*/
-    margin-bottom: 50px;
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  font-style: ;
+  font-weight: 400;
+  margin-top: 150px; /*I have to do this because <main> is also relative, with 100px shift from top because of the header + 50 to make up for weird thing it's doing with the last item*/
+  margin-bottom: 50px;
 }
 
 /*Mobile layout*/
 @media only screen and (max-width: 900px) {
-    .wideSrcIll {
-        display:none;
-    }
+  .wideSrcIll {
+    display: none;
+  }
 }
 
 /*Desktop layout*/
 @media only screen and (min-width: 900px) {
-    .mobile {
-        display:none;
-    }
-    .wideSrcIll {
-        margin-top: 0px;
-        margin-left: 50px;
-    }
-    .portfolioItem {
-        display: flex;
-    }
-    #introBox {
-        max-width: 800px;
-    }
-    #introText {
-        margin-left: 50px;
-    }
-    #page-wrap {
-        max-width: 800px;
-        margin:auto;
-    }
-    header {
-        width: 800px;
-    }
-    nav li {
-        font-size: 1.5rem;
-        margin-top: 0;
-    }
-    #testItem {
-        margin-top:100px;
-        margin-left: 50px;
-        height: 50px;
-        width:200px;
-    }
-    .PI-illustr {
-        margin-top: 0px;
-        margin-left: 40px;
-    }
+  .mobile {
+    display: none;
+  }
+  .wideSrcIll {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .portfolioItem {
+    display: flex;
+  }
+  #introBox {
+    max-width: 800px;
+  }
+  #introText {
+    margin-left: 50px;
+  }
+  #page-wrap {
+    max-width: 800px;
+    margin: auto;
+  }
+  header {
+    width: 800px;
+  }
+  nav li {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  #testItem {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 50px;
+    width: 200px;
+  }
+  .PI-illustr {
+    margin-top: 0px;
+    margin-left: 40px;
+  }
 }
