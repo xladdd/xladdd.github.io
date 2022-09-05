@@ -349,9 +349,6 @@ body .welcMarquee h1 {
   #noPhone {
     display: block;
   }
-  .welcMarquee {
-    display: none;
-  }
   #illustration {
     display: none;
   }
@@ -359,5 +356,8 @@ body .welcMarquee h1 {
     width: 300px;
     margin-top: 50px;
     animation: welcFloat 2s ease-in-out alternate infinite;
+  }
+  .menu-wrap {
+    display: none;
   }
 }
