@@ -158,7 +158,7 @@ main {
 .fullWidthImg {
   width: 100%;
   height: auto;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .PI-title {
