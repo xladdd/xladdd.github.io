@@ -186,14 +186,14 @@ main {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.714rem;
-  color: hsla(42, 0, 20, 1);
+  color: #333333;
 }
 
 .PI-title-over a:visited {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.714rem;
-  color: black;
+  color: #333333;
 }
 
 #PIbody {
@@ -387,8 +387,51 @@ footer {
   margin-bottom: 50px;
 }
 
+/* MEDIA QUERIES */
+
+/* Small mobile */
+@media only screen and (max-width: 400px) {
+  header {
+    max-width: 300px;
+  }
+  nav li {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  #intro-image {
+    max-width: 300px;
+    min-width: 300px;
+    background-size: contain;
+    background-color: #fffcf6;
+  }
+  #about-image {
+    height: 227px;
+    max-width: 300px;
+    background-color: #fff1d0;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-image: url("/resources/me.jpeg");
+    background-position-y: 85%;  
+    background-repeat: no-repeat;
+    opacity: 80%;
+  }
+  #PIbody {
+    width: 300px;
+  }
+  .tags li {
+    margin: 5px 3px;
+  }
+  .wideSrcIll {
+    display: none;
+  }
+  .topSquig {
+    display: none;
+  }
+}
+
+
 /*Mobile layout*/
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 400px) and (max-width: 900px) {
   .wideSrcIll {
     display: none;
   }
