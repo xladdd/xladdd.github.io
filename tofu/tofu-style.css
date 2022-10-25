@@ -158,6 +158,7 @@ h3 {
   margin: auto;
   width: 350px;
   z-index: 1;
+  
 }
 
 main {
@@ -302,7 +303,7 @@ body .welcMarquee h1 {
 }
 
 #illustration {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 140px;
   animation: welcFloat 2s ease-in-out alternate infinite;
   opacity: 0.6;
