@@ -1,162 +1,120 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Vlad Frolov</title>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
+    <link rel="apple-touch-icon" href="/resources/logo192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-<title>Vlad Frolov</title>
-<link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
-<link rel="apple-touch-icon" href="/resources/logo192.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href='/style.css' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBHRL3MEZS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-RBHRL3MEZS"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-RBHRL3MEZS');
-</script>
+    gtag("config", "G-RBHRL3MEZS");
+  </script>
 
-<body><div id="page-wrap">
+  <body>
+    <div class="side"></div>
 
-<header>
-    <nav>
-        <ul>
-            <li id="navLogo">Vlad Frolov</li>
-            <li><a href="https://github.com/vladdjpg" id="navlink">GitHub</a></li>
-            <li><a href="/about.html" id="navlink">About</a></li>
-        </ul>
-    </nav>
-</header>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li class="logo"><a href="./index.html">Vlad Frolov</a></li>
+          </ul>
+          <ul>
+            <li class="menu"><a href="./about.html">About</a></li>
+            <li class="menu">
+              <a href="https://github.com/vladdjpg">GitHub</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-<main>
-<div id="introBox">
-    <div id="intro-image"></div>
-    <div id="introText">
-        <p id="mainTitle">Hi, I’m Vlad, <br>a designer who codes.</p>
-        <img src="./resources/squiggles/squig0.svg" class="mobile arrow"/>
-        <div class='wideSrcIll'><img src="./resources/squiggles/squig0a.svg"/></div>
-    </div>
-</div>
+      <main>
+        <section class="hero">
+          <h1>
+            Hi, I’m Vlad, and&nbsp;I’m&nbsp;a&nbsp;<span>graphic designer</span
+            ><br /><br />
 
-<!--Portfolio item 1-->
-<div class="portfolioItem"> 
-    <div id="PIbody">
-        <img class="topSquig" src="./resources/squiggles/squig2.svg">
-        <div class="PI-title">
-            <H1 class="PI-title-under">Care</H1>
-            <H1 class="PI-title-over"><a href="./care.html">Care</a></H1>
-        </div>
-        <div class="tags">
-            <ul>
-                <li class="inprog">In Progress</li> 
-            </ul>
-            <ul>
-                <li class="tech">React Native</li> 
-            </ul>
-            <ul>
-                <li class="source"><a href="https://snack.expo.dev/@vfrolov/care?platform=web">Expo</a></li> 
-                <li class="source"><a href="https://github.com/vladdjpg/care">GitHub</a></li> 
-                <li class="source"><a href="https://www.figma.com/file/pGsCWhJbLNRh3lteBI00zr/C-a-r-e?node-id=126%3A137">Figma</a></li></ul>
-        </div>
-        <p class="PI-text">Remember the good. Forget the bad.</p>
-        <img src="./resources/care.gif" class="PI-illustr mobile"/>
-        <p id="PI-button"><b><a href="./care.html">Take a look</a></b></p>
-    </div>
-    <div class='wideSrcIll'>
-        <img src="./resources/care.gif" class="PI-illustr"/> 
-    </div>     
-</div>
+            I started learning to code in 2021 and now, I’m working with
+            <span>React&nbsp;Native</span><br /><br />
 
-<!--Portfolio item 2-->
-<div class="portfolioItem"> 
-    <div id="PIbody">
-        <div id="squiggle" class="squig1"></div>
-        <div class="PI-title">
-            <H1 class="PI-title-under">whether</H1>
-            <H1 class="PI-title-over"><a href="https://whetherrrrr.netlify.app/">whether</a></H1>
-        </div>
-        <div class="tags">
-            <ul>
-                <li class="tech">React</li> 
-                <li class="tech">CSS</li> 
-                <li class="tech">HTML</li>
-            </ul>
-            <ul>
-                <li class="source"><a href="https://github.com/vladdjpg/whether">GitHub</a></li> 
-                <li class="source"><a href="https://www.figma.com/file/qT6yEgEureSynIUPUhVXXW/whether?node-id=118%3A4">Figma</a></li></ul>
+            Here’s a few things I made:
+          </h1>
+        </section>
+
+        <section class="items">
+          <section class="item">
+            <div class="titleContainer careImg">
+              <h2>CARE</h2>
             </div>
-        <p class="PI-text">Helps you find out whether it’s sunny, rainy, or <i>even</i> stormy.</p> 
-        <img src="./resources/whether.gif" class="PI-illustr mobile"/>
-        <p id="PI-button"><b><a href="https://whetherrrrr.netlify.app/">Try it out</a></b></p>
-    </div>
-    <div class='wideSrcIll'>
-        <img src="./resources/whether.gif" class="PI-illustr"/>
-    </div>     
-</div>
-
-<!--Portfolio item 3-->
-<div class="portfolioItem"> 
-    <div id="PIbody">
-        <div id="squiggle" class="squig2"></div>
-        <div class="PI-title">
-            <H1 class="PI-title-under">TOFU</H1>
-            <H1 class="PI-title-over"><a href="./tofu.html">TOFU</a></H1>
-        </div>
-        <div class="tags">
-            <ul>
-                <li class="tech">JavaScript</li> 
-                <li class="tech">CSS</li> 
-                <li class="tech">HTML</li>
+            <ul class="tags">
+              <li class="itemInProgress">In Progress</li>
+              <li class="itemTech">React Native</li>
+              <li class="itemLink"><a href="https://snack.expo.dev/@vfrolov/care?platform=web">Expo</a></li>
+              <li class="itemLink"><a href="https://github.com/vladdjpg/care">GitHub</a></li>
+              <li class="itemLink"><a href="https://www.figma.com/file/pGsCWhJbLNRh3lteBI00zr/C-a-r-e?node-id=126%3A137">Figma</a></li>
             </ul>
-            <ul>
-                <li class="source"><a href="https://github.com/vladdjpg/vladdjpg.github.io">GitHub</a></li> 
-                <li class="source"><a href="https://www.figma.com/file/t0cHwk1lFtR3cE3eIq8qFA/TOFU?node-id=0%3A1">Figma</a></li></ul>
-            </div>
-        <p class="PI-text">A catalogue of simple vegan recipes for people that can't tell the difference between tofu and tempeh.</p>
-        <img src="./resources/tofu.gif" class="PI-illustr mobile"/>
-        <p id="PI-button"><a href="/tofu.html">Go vegan</a></p>
-    </div>
-    <div class='wideSrcIll'>
-        <img src="./resources/tofu.gif" class="PI-illustr"/>
-    </div>     
-</div>
+            <p class="itemDesc">Remember the good. Forget the bad.</p>
+            <a href="https://snack.expo.dev/@vfrolov/care?platform=web" class="itemAction">Take a look at the progress →</a>
+          </section>
 
-<!--Portfolio item 4-->
-<div class="portfolioItem"> 
-    <div id="PIbody">
-        <div id="squiggle" class="squig1"></div>
-        <div class="PI-title">
-            <H1 class="PI-title-under">můjRozhlas</H1>
-            <H1 class="PI-title-over">můjRozhlas</H1>
-        </div>
-        <div class="tags">
-            <ul>
-                <li class="tech">UI Design</li> 
+          <section class="item">
+            <div class="titleContainer whetherImg">
+              <h2>WHETHER</h2>
+            </div>
+            <ul class="tags">
+              <li class="itemTech">React</li>
+              <li class="itemTech">HTML + CSS</li>
+              <li class="itemLink"><a href="https://github.com/vladdjpg/whether">GitHub</a></li>
             </ul>
-            <ul>
-                <li class="source"><a href="https://www.figma.com/file/x3rmE8ol1XbLoNs2P83exC/Muj-Rozhlas">Figma</a></li></ul>
+            <p class="itemDesc">Helps you find out whether it’s sunny, rainy, or even stormy.</p>
+            <a href="https://whetherrrrr.netlify.app/" class="itemAction">Try it out →</a>
+          </section>
+
+          <section class="item">
+            <div class="titleContainer tofuImg">
+              <h2>TOFU</h2>
             </div>
-        <p class="PI-text">An unsolicited redesign the Czech Radio app, můjRozhlas.</p>
-        <img src="./resources/rozhlas.gif" class="PI-illustr mobile"/>
-        <p id="PI-button"><a href="https://www.figma.com/file/x3rmE8ol1XbLoNs2P83exC/Muj-Rozhlas">Have a look</a></p>
+            <ul class="tags">
+              <li class="itemTech">Javascript</li>
+              <li class="itemTech">HTML + CSS</li>
+              <li class="itemLink"><a href="https://github.com/vladdjpg/vladdjpg.github.io">GitHub</a></li>
+            </ul>
+            <p class="itemDesc">A catalogue of simple vegan recipes for&nbsp;people that can't tell the difference between tofu and tempeh.</p>
+            <a href="./tofu.html" class="itemAction">Go vegan →</a>
+          </section>
+
+        </section>
+      </main>
+
+      <footer>
+        <p>Handmade in the Czech Republic</p><br>
+        <div class="footerPhoto"></div>
+      </footer>
     </div>
-    <div class='wideSrcIll'>
-        <img src="./resources/rozhlas.gif" class="PI-illustr"/>
-    </div>             
-</div>
-
-<div id="seeMore">See more here</div>
-
-</main>
-
-<footer>
-    <p>Made with love in &#127464&#127487</p>
-</footer>
-
-</div></body>
-
+    <!--End of wrapper-->
+    <div class="side"></div>
+  </body>
 </html>
