@@ -203,6 +203,7 @@ h2 {
   font-size: 4rem;
   font-weight: 500;
   list-style: none;
+  line-height: 4rem;
 }
 
 .about li {
@@ -242,13 +243,6 @@ h2 {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-}
-
-.ping {
-  font-family: "Eczar", serif;
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 4rem;
 }
 
 /* FOOTER */
