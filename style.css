@@ -13,7 +13,6 @@
 }
 
 html {
-<<<<<<< HEAD
   font-size: 16px;
 }
 
@@ -45,7 +44,6 @@ p {
 
 p a {
   color: rgb(37, 37, 37);
-=======
   font-size: 14px;
   color: hsla(42, 0, 20, 1);
   box-sizing: border-box;
@@ -473,12 +471,10 @@ footer {
   .topSquig {
     display: none;
   }
->>>>>>> parent of caaeaf6 (update to version 2)
 }
 
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
-<<<<<<< HEAD
   html {
     font-size: 18px;
   }
@@ -486,10 +482,8 @@ footer {
   body {
     width: 800px;
     margin: 80px auto;
-=======
   .mobile {
     display: none;
->>>>>>> parent of caaeaf6 (update to version 2)
   }
   .wideSrcIll {
     margin-top: 0px;
