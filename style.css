@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "LynoJean";
+  src: url("/resources/LynoJean.otf") format("opentype");
+}
+
 * {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -8,6 +13,7 @@
 }
 
 html {
+<<<<<<< HEAD
   font-size: 16px;
 }
 
@@ -39,10 +45,440 @@ p {
 
 p a {
   color: rgb(37, 37, 37);
+=======
+  font-size: 14px;
+  color: hsla(42, 0, 20, 1);
+  box-sizing: border-box;
+  background-color: #fffcf6;
+}
+
+#page-wrap {
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fffcf6;
+  max-width: 343px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  height: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 344px;
+  background-color: #fffcf6;
+  z-index: 80;
+}
+
+#navlink {
+  color: #333333;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  font-size: 1.071rem;
+  float: right;
+  margin-left: 2rem;
+  margin-top: 4.5px;
+}
+
+#navLogo {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+}
+
+#navLogo a {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: #333333;
+  text-decoration: none;
+}
+
+#navLogo a:visited {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 1.786rem;
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: #333333;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+#introBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  max-width: 344px;
+}
+
+#intro-image {
+  min-width: 344px;
+  height: 227px;
+  background-color: #fff1d0;
+  margin-bottom: 24px;
+  background-size: cover;
+  background-image: url("/resources/indeximg.png");
+  background-position-y: 85%;  
+  background-repeat: no-repeat;
+  opacity:90%;
+}
+
+#about-image {
+    height: 227px;
+    background-color: #fff1d0;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-image: url("/resources/me.jpeg");
+    background-position-y: 85%;  
+    background-repeat: no-repeat;
+    opacity: 80%;
+  }
+
+#introText {
+  max-width: 344px;
+}
+
+#mainTitle {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 2.857rem;
+  color: #529d96;
+  margin-bottom: 24px;
+}
+
+#link {
+  color: #4290cf;
+  text-decoration: underline;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.portfolioItem {
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+#squiggle {
+  height: 25px;
+  width: 125px;
+  margin: auto; /* Centers it*/
+}
+
+.squig0 {
+  background-image: url("/resources/squiggles/squig0.svg");
+
+}
+
+.squig1 {
+  background-image: url("/resources/squiggles/squig1.svg");
+}
+
+.squig2 {
+  background-image: url("/resources/squiggles/squig2.svg");
+}
+
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.PI-title {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+}
+
+.PI-title-under {
+  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-size: 2.857rem;
+  color: #fff0d2;
+}
+
+.PI-title-over {
+  font-weight: 1400;
+  font-size: 1.714rem;
+  position: relative;
+  top: -68px;
+  font-weight: bold;
+}
+
+.PI-title-over a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.714rem;
+  color: #333333;
+}
+
+.PI-title-over a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.714rem;
+  color: #333333;
+}
+
+#PIbody {
+  width: 344px;
+}
+
+.PI-text {
+  text-align: center;
+}
+
+.PI-illustr {
+  width: 150px;
+  height: auto;
+  margin: 0 auto; /* Centers it*/
+  margin-top: 20px;
+  font-size: 10px;
+  display: block;
+}
+
+.arrow {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.tags {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.tags-about {
+  margin: 10px auto;
+}
+
+.tags li {
+  font-size: 11px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+.tags-about li {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 4px;
+  margin: 10px 0;
+}
+
+.tags ul {
+  display: inline-block;
+}
+
+.tags-about ul {
+  display: inline-block;
+}
+
+.tags a {
+  text-decoration: none;
+}
+
+.tags-about a {
+  text-decoration: none;
+}
+
+.tags .tech {
+  color: #529d96;
+  border: 1px #529d96 solid;
+}
+
+.tags-about .tech {
+  color: #529d96;
+  border: 1px #529d96 solid;
+}
+
+.tags .inprog {
+  color: gray;
+  border: 1px gray dashed;
+}
+
+.source a {
+  color: #298dd2;
+  text-decoration: none;
+}
+
+.tags .source {
+  color: #298dd2;
+  border: 1px #298dd2 solid;
+}
+
+.tags-about .source {
+  color: #298dd2;
+  border: 1px #298dd2 solid;
+  text-decoration: none;
+}
+
+#dotted {
+  border: 1px #529d96 dashed;
+}
+
+#testItemIll {
+  /* This ID should only change the BG of the illustration in both Mob and Desktop version */
+  text-align: center;
+  background-color: #529d96;
+  padding-top: 5px;
+}
+
+#fortuneIll {
+  /* This ID should only change the BG of the illustration in both Mob and Desktop version */
+  text-align: center;
+  background-image: url(/resources/squiggles/fortunescroll.svg);
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+#PI-button {
+  width: 160px;
+  margin: auto; /* Centers it*/
+  background-color: #298dd2;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 5px 5px lightgray;
+}
+
+#PI-button:hover {
+  box-shadow: 3px 3px #fff1d0;
+}
+
+
+
+#PI-button a {
+  text-decoration: none;
+  color: white;
+}
+
+#seeMore {
+  text-align: center;
+  width: 160px;
+  border: 2px solid #298dd2;
+  margin: auto; /* Centers it*/
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.714rem;
+  font-weight: bold;
+  background-color: #fffcf6;
+  display: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  display: inline;
+  font-weight: bold;
+  color: ;
+}
+
+.abilities li {
+  display: inline;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+#spark {
+  color: #298dd2;
+  text-decoration: none;
+}
+
+#highlight {
+  background-color: #fff0d2;
+  color: #529d96;
+  font-weight: bold;
+}
+
+#viewSource {
+  font-style: italic;
+  font-size: 0.65rem;
+}
+
+footer {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  font-style: ;
+  font-weight: 400;
+  margin-top: 150px; /*I have to do this because <main> is also relative, with 100px shift from top because of the header + 50 to make up for weird thing it's doing with the last item*/
+  margin-bottom: 50px;
+}
+
+/* MEDIA QUERIES */
+
+/* Small mobile */
+@media only screen and (max-width: 400px) {
+  header {
+    max-width: 300px;
+  }
+  nav li {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  #intro-image {
+    max-width: 300px;
+    min-width: 300px;
+    background-size: contain;
+    background-color: #fffcf6;
+  }
+  #about-image {
+    height: 227px;
+    max-width: 300px;
+    background-color: #fff1d0;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-image: url("/resources/me.jpeg");
+    background-position-y: 85%;  
+    background-repeat: no-repeat;
+    opacity: 80%;
+  }
+  #PIbody {
+    width: 300px;
+  }
+  .tags li {
+    margin: 5px 3px;
+  }
+  .wideSrcIll {
+    display: none;
+  }
+  .topSquig {
+    display: none;
+  }
+}
+
+
+/*Mobile layout*/
+@media only screen and (min-width: 400px) and (max-width: 900px) {
+  .wideSrcIll {
+    display: none;
+  }
+  .topSquig {
+    display: none;
+  }
+>>>>>>> parent of caaeaf6 (update to version 2)
 }
 
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
+<<<<<<< HEAD
   html {
     font-size: 18px;
   }
@@ -50,5 +486,49 @@ p a {
   body {
     width: 800px;
     margin: 80px auto;
+=======
+  .mobile {
+    display: none;
+>>>>>>> parent of caaeaf6 (update to version 2)
+  }
+  .wideSrcIll {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  .topSquig {
+    height:25px; 
+    width: 125px; 
+    margin: auto;
+    margin-left: 110px;
+  }
+  .portfolioItem {
+    display: flex;
+  }
+  #introBox {
+    max-width: 800px;
+  }
+  #introText {
+    margin-left: 50px;
+  }
+  #page-wrap {
+    max-width: 800px;
+    margin: auto;
+  }
+  header {
+    width: 800px;
+  }
+  nav li {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  #testItem {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 50px;
+    width: 200px;
+  }
+  .PI-illustr {
+    margin-top: 0px;
+    margin-left: 40px;
   }
 }
