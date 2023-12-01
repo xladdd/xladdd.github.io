@@ -274,6 +274,83 @@ footer img {
   transform: scaleX(-1);
 }
 
+/* ABOUT */
+
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutContent {
+  flex: 3 1 auto; /*as a child of about*/
+  height: auto;
+  width: 100%; /*necessary?*/
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.aboutMe img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.aboutMe p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-right: 10rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.proficiencies {
+  margin-right: 5rem;
+  
+}
+
+.proficiencies li {
+  background-color: var(--highlight); 
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.bakasana {
+  background-image: url("./resources/bakasana.PNG");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+
+.tools li {
+  background-color: var(--pale); 
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 /* When the going gets tough*/

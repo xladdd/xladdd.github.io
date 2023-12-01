@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TGPVMWPJ");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <title>Vlad Frolov</title>
     <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
+    <meta name="theme-color" content="#fffbf1" />
     <link rel="apple-touch-icon" href="/resources/logo192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono"
     />
   </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-RBHRL3MEZS"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-RBHRL3MEZS");
-  </script>
-
   <body>
-    <div class="side"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TGPVMWPJ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <div id="wrapper">
-      <header>
-        <nav>
-          <ul>
-            <li class="logo"><a href="./index.html">Vlad Frolov</a></li>
-          </ul>
-          <ul>
-            <li class="menu"><a href="./about.html">About</a></li>
-            <li class="menu"><a href="">GitHub</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <div class="margin"></div>
+      <nav>
+        <h1><a href="http://xladdd.github.io/">Vlad Frolov</a></h1>
+        <ul>
+          <li><a href="https://github.com/xladdd" id="navlink">GitHub</a></li>
+          <li><a href="./about.html" id="navlink">About</a></li>
+        </ul>
+      </nav>
+      <div class="margin"></div>
+    </header>
 
-      <main>
-        <div class="aboutFlex">
-        <p class="about">
-          Vlad Frolov<br />
-          Age: 28<br />
-          Location: Prague<br /><br />
-        </p>
+    <main>
+      <section class="about">
+        <div class="margin"></div>
+
+        <div class="aboutContent">
+
+          <div class="aboutMe">
+						<img src="./resources/moi.jpeg" /> 
+            <div class="aboutText">
+              <p>
+                I’ve been designing for a <i>looong</i> time. I’ve gone from making
+                album covers for my band as a teenager, through creating a
+                visual identity for my university’s radio station, to social
+                media and desktop publishing in the last few years.
+              </p>
+              <p>
+                I have a bachelor’s degree in Psychology from Goldsmiths,
+                University of London, and I’ve also studied Creative Writing at
+                Central Saint Martins, UAL; Art Direction and Copywriting at SCA
+                2.0; and an MA in Contemporary Art Theory, again in Goldsmiths.
+              </p>
+              <p>
+                During the 2020 lockdown, I decided to try my hand at web design
+                and programming, so I completed a Codecademy course in Frontend
+                development. And although bringing websites to life is fun, what
+                I enjoy most is creating beautiful, functional and memorable
+                designs. So after several years, I am back to basics, working
+                with graphic design, learning 3D, and exploring the use of AI in
+                photography, adding to my wide array of creative tools.
+              </p>
+              <p>Ping me anytime at <b>vladfrolov /at/ email.cz</b></p>
+            </div>
+          </div>
+
+          <div class="skills">
+            <ul class="proficiencies">
+              <li>React Native</li>
+              <li>React</li>
+              <li>Javascript</li>
+              <li>HTML + CSS</li>
+              <li>English</li>
+              <li>Czech</li>
+              <li>Russian</li>
+              <li>Spanish</li>
+              <li class="bakasana">A really good bakasana</li>
+            </ul>
+            <ul class="tools">
+              <li>InDesign</li>
+              <li>Photoshop</li>
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>React Native</li>
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>CLI</li>
+            </ul>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
         </div>
-        <div class="aboutFlex">
-          <p class="about">Proficiencies:</p>
-        <ul class="about">
-          <li id="proficiency">React Native</li>
-          <li id="proficiency">React</li>
-          <li id="proficiency">Javascript</li>
-          <li id="proficiency">HTML + CSS</li>
-          <li id="proficiency">English</li>
-          <li id="proficiency">Czech</li>
-          <li id="proficiency">Russian</li>
-          <li id="proficiency">Spanish</li>
-          <li id="downwardDog">A really good downward dog</li>
-        </ul>
-        <br><br>
-      </div>
-      <div class="aboutFlex">
-        <p class="about">Tools:</p>
-        <ul class="about">
-          <li id="tool">React Native</li>
-          <li id="tool">VS Code</li>
-          <li id="tool">GitHub</li>
-          <li id="tool">CLI</li>
-          <li id="tool">Figma</li>
-          <li id="tool">Photoshop</li>
-          <li id="tool">Illustrator</li>
-          <li id="tool">InDesign</li>
-        </ul>
-        <br>
-        <p class="ping">Ping me anytime&nbsp;at vlad&nbsp;{at}&nbsp;frolov.cz</p>
-      </div>
-      </main>
-      <footer id="aboutFooter">
-        <p>Handmade in the Czech Republic</p><br>
-        <div class="footerPhoto"></div>
-      </footer>
-    </div>
-    <!--End of wrapper-->
-    <div class="side"></div>
+
+        <div class="margin"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Handmade in the Czech Republic</p>
+      <img src="./resources/footer_photo.png" />
+    </footer>
   </body>
 </html>
