@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RWJMMMT8WQ"
+    ></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TGPVMWPJ");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RWJMMMT8WQ");
     </script>
-    <!-- End Google Tag Manager -->
 
     <title>Vlad Frolov</title>
     <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
@@ -29,17 +29,6 @@
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TGPVMWPJ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <header>
       <div class="margin"></div>
       <nav>
@@ -55,7 +44,7 @@
     <main>
       <section class="hero">
         <div class="margin"></div>
-        <h2>Hi, I’m Vlad,<br/>and&nbsp;I’m&nbsp;a graphic&nbsp;designer</h2>
+        <h2>Hi, I’m Vlad,<br />and&nbsp;I’m&nbsp;a graphic&nbsp;designer</h2>
         <div class="margin"></div>
       </section>
 
@@ -95,14 +84,19 @@
                 <li class="itemTech">Branding</li>
                 <li class="itemTech">Product</li>
                 <li class="itemLink">
-                  <a href="https://www.behance.net/gallery/185396159/Mouky-Probio">Behance</a>
+                  <a
+                    href="https://www.behance.net/gallery/185396159/Mouky-Probio"
+                    >Behance</a
+                  >
                 </li>
               </ul>
-              <p>
-                From the field, to you.</p>
-              <a href="https://www.behance.net/gallery/185396159/Mouky-Probio" class="itemAction"
+              <p>From the field, to you.</p>
+              <a
+                href="https://www.behance.net/gallery/185396159/Mouky-Probio"
+                class="itemAction"
                 >Take a peek →</a
-              > <!--Change url to "./probio.html" when the page is complete-->
+              >
+              <!--Change url to "./probio.html" when the page is complete-->
             </div>
             <div class="itemSpacer"></div>
           </div>
@@ -120,7 +114,9 @@
                 </li>
               </ul>
               <p>
-                A catalogue of simple vegan recipes for&nbsp;people that can't tell the difference between tofu and tempeh.</p>
+                A catalogue of simple vegan recipes for&nbsp;people that can't
+                tell the difference between tofu and tempeh.
+              </p>
               <a href="https://tofutofutofu.netlify.app/" class="itemAction"
                 >Go vegan →</a
               >
@@ -157,7 +153,7 @@
 
     <footer>
       <p>Handmade in the Czech Republic</p>
-      <img src="./resources/footer_photo.png"/>
+      <img src="./resources/footer_photo.png" />
     </footer>
   </body>
 </html>
