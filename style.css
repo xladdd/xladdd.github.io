@@ -3,6 +3,11 @@
   src: url("/resources/LynoJean.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Windsor";
+  src: url("/resources/Windsor_BT.ttf") format("opentype");
+}
+
 :root {
   --bg: #fffbf1;
   --text: #134e87;
@@ -25,19 +30,13 @@ html {
 }
 
 /*
-COLOURS
-BG var(--bg)
-Black text var(--text) - FOR NOW, too blue
-Highlight var(--highlight) - FOR NOW
-Grey text var(--pale)
-
 --also maybe useful--
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
 */
 
 .margin {
-  flex: 1 1 400px;
+  flex: 1 1 200px;
 }
 
 /*Header*/
@@ -54,6 +53,7 @@ header {
   padding: 0 0 0 2px; /*check*/
   position: fixed;
   background-color: var(--bg);
+  background-color: ;
 }
 
 nav {
@@ -69,7 +69,7 @@ nav {
 
 h1 a {
   /*the correct text colour*/
-  font-family: "LynoJean", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
+  font-family: "Windsor", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
   font-size: 2.5rem;
   color: var(--text);
   text-decoration: none;
@@ -103,7 +103,7 @@ nav li a:visited {
 /* MAIN */
 
 h2 {
-  font-family: "LynoJean", Arial, Helvetica, sans-serif;
+  font-family: "Windsor", Arial, Helvetica, sans-serif;
   font-size: 4.3rem;
   /* line-height: 6rem; */
   flex: 3 1 auto;
@@ -160,10 +160,10 @@ h2 {
 */
 }
 .koprImgSrc {
-  background-image: url("./resources/downward_dog.PNG");
+  background-image: url("./resources/kopr_image.png");
 }
 .probioImgSrc {
-  background-image: url("./resources/care-image.PNG"); /*change!*/
+  background-image: url("./resources/probio_image.PNG"); /*change!*/
 }
 .tofuImgSrc {
   background-image: url("./resources/tofu_image.png");
@@ -189,7 +189,7 @@ h2 {
 }
 
 h3 {
-  font-family: "LynoJean", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
+  font-family: "Windsor", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
   font-size: 3rem;
   font-weight: bolder;
   line-height: 100%;
@@ -320,11 +320,10 @@ footer img {
 
 .proficiencies {
   margin-right: 5rem;
-  
 }
 
 .proficiencies li {
-  background-color: var(--highlight); 
+  background-color: var(--highlight);
   font-size: 1.3rem;
   margin-bottom: 1rem;
   align-items: center;
@@ -342,7 +341,7 @@ footer img {
 }
 
 .tools li {
-  background-color: var(--pale); 
+  background-color: var(--pale);
   font-size: 1.3rem;
   margin-bottom: 1rem;
   align-items: center;
@@ -386,9 +385,9 @@ footer img {
   }
   .itemPhoto {
     background-position: center;
-    width: 450px;
+    width: 400px;
     flex: 1;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
   }
   .itemDesc {
     margin-left: 10rem;
