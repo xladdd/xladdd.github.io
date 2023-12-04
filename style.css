@@ -23,91 +23,82 @@
 }
 
 html {
-  font-size: 10px;
-  color: var(--text); /*Font colour*/
-  box-sizing: border-box;
   background-color: var(--bg);
+  color: var(--text);
+  font-size: 10px;
+  box-sizing: border-box;
 }
 
-.margin {
-  flex: 1;
-  flex-shrink: 1;
+.pageWrap {
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 1000px;
+  margin: auto;
 }
 
-/*Header*/
+/* HEADER */
 
 header {
-  /*full 3-child header container: side, nav, side*/
   background-color: var(--bg);
+  position: fixed;
   height: 10rem;
   width: 100%;
-  position: fixed;
-  z-index: 1;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 80;
   top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
 }
 
 nav {
-  /*nav for some reason keeps the same width regardless*/
-  /*in header, 2 items, space between*/
-  flex: 3 1 auto; /*as a child of header*/
-  width: 100%; /*necessary?*/
-  display: flex; /*as parent*/
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1000px;
 }
 
 h1 a {
   /*the correct text colour*/
-  font-family: "Windsor", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
+  font-family: "Windsor", Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   color: var(--text);
   text-decoration: none;
 }
 h1 a:visited {
-  /*the correct text colour, to be sure*/
   color: var(--text);
 }
 
 nav ul {
-  float: left;
+  float: right;
 }
 
 nav li {
-  color: var(--pale); /*Font colour*/
+  color: var(--pale);
   list-style-type: none;
   float: left;
   margin-left: 20px;
   font-size: 1.5rem;
-  text-decoration: none; /*move down to a if needed*/
+  text-decoration: none;
 }
 nav li a {
-  color: var(--pale); /*Font colour*/
-  text-decoration: none; /*move down to a if needed*/
+  color: var(--pale);
+  text-decoration: none;
 }
 nav li a:visited {
-  color: var(--pale); /*Font colour*/
-  text-decoration: none; /*move down to a if needed*/
+  color: var(--pale);
+  text-decoration: none;
 }
 
-/* MAIN */
+/* HERO */
 
-h2 {
-  font-family: "Windsor", Arial, Helvetica, sans-serif;
-  font-size: 4.3rem;
-  flex: 3 1 auto;
-  width: 100%;
-  color: var(--bg);
-  text-shadow: 4px 4px var(--text);
-  background-color: green;
+main {
+  margin-top: 10rem;
 }
 
 .hero {
-  /*image background and its position, margins, full width, etc.*/
-  margin-top: 10rem;
-  background-image: url("./resources/heya.png"); 
+  width: 100%;
+  background-image: url("./resources/heya.png");
   height: 24rem;
   align-items: center;
   display: flex;
@@ -118,7 +109,29 @@ h2 {
   background: contain;
 }
 
-/* CONTENTS */
+h2 {
+  font-family: "Windsor", Arial, Helvetica, sans-serif;
+  font-size: 4.3rem;
+  width: 1000px;
+  color: var(--bg);
+  text-shadow: 4px 4px var(--text);
+}
+
+/* ITEMS */
+
+.item {
+  margin-top: 5rem;
+  width: 1000px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.itemPhoto {
+  background: top left/contain no-repeat;
+  width: 50%;
+  height: 300px;
+  display: inline-block;
+}
 
 .koprImgSrc {
   background-image: url("./resources/kopr_image.png");
@@ -133,9 +146,16 @@ h2 {
   background-image: url("./resources/whether_image.png");
 }
 
+.itemDesc {
+  padding-left: 3rem;
+  padding-right: -3rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
 
 h3 {
-  font-family: "Windsor", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
+  font-family: "Windsor", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   line-height: 100%;
@@ -144,16 +164,17 @@ h3 {
 }
 
 .tags {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .tags li {
-  /*try nesting*/
   list-style-type: none;
   display: inline;
   text-align: center;
   padding: 3px 6px;
   font-size: 1rem;
+  margin-right: 1rem;
 }
 
 .itemTech {
@@ -175,24 +196,15 @@ h3 {
   color: var(--pale);
 }
 
-.itemDesc {
-  font-size: 2rem;
-  margin: 20px 0 10px 0;
-  align-self: flex-start;
-  position: relative;
-  top: -20px;
-}
-
 .itemDesc p {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.3rem;
 }
 
 .itemAction {
   font-size: 1.3rem;
   color: var(--text);
-  margin-top: 1rem;
-  /*text-shadow: 2px -2px var(--highlight);*/
 }
 
 /* FOOTER */
@@ -221,27 +233,6 @@ footer img {
 }
 
 /* ABOUT */
-
-.about {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.aboutContent {
-  flex: 3 1 auto; /*as a child of about*/
-  height: auto;
-  width: 100%; /*necessary?*/
-  align-items: center;
-  justify-content: space-between;
-}
-
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-
 .aboutMe img {
   width: 100%;
   margin-bottom: 3rem;
@@ -250,10 +241,10 @@ footer img {
 .aboutMe p {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  padding-right: 10rem;
 }
 
 .skills {
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
 }
@@ -296,117 +287,58 @@ footer img {
   line-height: 2rem;
 }
 
+
 /* MEDIA QUERIES */
 
-/* When the going gets tough*/
-@media only screen and (max-width: 1000px) {
-  .margin {
-    flex: 1 1 50px;
-  }
-  .itemDesc {
-    flex-grow: 0.5;
-    max-width: 350px;
-    min-width: 300px;
-  }  
-  header {
-    height: 8rem;
-  }
-  .hero {
-    /*image background and its position, margins, full width, etc.*/
-    margin-top: 8rem;
-}
-
-@media only screen and (max-width: 650px) {
-  html {
-    font-size: 8px;
-  }
-
-  .contents .margin {
-    flex: 0.4;
-  }
-  .items {
-    justify-content: center;
-  }
-  .item {
-    flex-flow: column;
-    margin-left: 50px;
-    margin-bottom: 0.5rem;
-    width: max-content;
-  }
-  h3 {
-    margin-top: 2rem;
-  }
-  .itemPhoto {
-    background-position: center;
-    width: 400px;
-    flex: 1;
-    padding-bottom: 50%;
-  }
-  .itemDesc {
-    margin-left: 10rem;
-    max-width: 350px;
-  }
-}
-
-/* Regular mobile */
-@media only screen and (max-width: 480px) {
-}
-
-/* Small mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   html {
     font-size: 7px;
   }
+  .pageWrap {
+    width: 350px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  header {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  main {
+    margin-top: 7rem;
+  }
+  .hero {
+    width: auto;
+    height: 20rem;
+  }
   h2 {
+    width: 350px;
     font-size: 3.5rem;
-  }
-  .margin {
-    flex: 1 2 0px;
-  }
-  .itemPhoto {
-    width: 250px;
-    padding-bottom: 40%;
-    background-position: left;
-  }
-  .item {
-    flex-flow: column;
-    margin-left: 50px;
-    margin-bottom: 0.5rem;
-    width: max-content;
-  }
-  h3 {
     margin-top: 2rem;
   }
-  .contents {
-    margin-top: 4rem;
-    width: fit-content;
-  }
-  .items {
-    margin-left: -20px;
-    justify-content: center;
-  }
   .item {
-    flex: none;
-    margin-left: 100px;
+    width: 350px;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .itemPhoto {
+    background-position: center;
+    width: 100%;
+    height: 141px;
+    display: inline-block;
+    margin-bottom: 3rem;
   }
   .itemDesc {
-    margin-left: 0;
-    flex: none;
-    width: 100px;
+    width: 100%;
+    display: inline;
+    padding-left: 5rem;
   }
   footer img {
     transform: scaleX(-1);
     width: 200px;
     margin-top: -40px;
     margin-bottom: -20px;
-  }
-  .margin {
-    flex: 2 6 400px;
-  }
-  .hero {
-    height: 20rem;
-  }
-  .itemDesc p {
-    padding-right: 100px;
   }
 }
