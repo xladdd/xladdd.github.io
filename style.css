@@ -29,38 +29,30 @@ html {
   background-color: var(--bg);
 }
 
-/*
---also maybe useful--
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
-*/
-
 .margin {
-  flex: 1 1 200px;
+  flex: 1;
+  flex-shrink: 1;
 }
 
 /*Header*/
 
 header {
   /*full 3-child header container: side, nav, side*/
+  background-color: var(--bg);
   height: 10rem;
   width: 100%;
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  align-items: center;
   display: flex;
-  z-index: 1;
-  padding: 0 0 0 2px; /*check*/
-  position: fixed;
-  background-color: var(--bg);
-  background-color: ;
+  align-items: center;
 }
 
 nav {
   /*nav for some reason keeps the same width regardless*/
   /*in header, 2 items, space between*/
   flex: 3 1 auto; /*as a child of header*/
-  height: auto;
   width: 100%; /*necessary?*/
   display: flex; /*as parent*/
   align-items: center;
@@ -105,18 +97,17 @@ nav li a:visited {
 h2 {
   font-family: "Windsor", Arial, Helvetica, sans-serif;
   font-size: 4.3rem;
-  /* line-height: 6rem; */
   flex: 3 1 auto;
   width: 100%;
   color: var(--bg);
   text-shadow: 4px 4px var(--text);
+  background-color: green;
 }
 
 .hero {
   /*image background and its position, margins, full width, etc.*/
   margin-top: 10rem;
-  width: 100%;
-  background-image: url("./resources/heya.png"); /*CHANGE*/
+  background-image: url("./resources/heya.png"); 
   height: 24rem;
   align-items: center;
   display: flex;
@@ -127,38 +118,8 @@ h2 {
   background: contain;
 }
 
-.contents {
-  /* margin|items|margin*/
-  display: flex;
-  margin-top: 5rem;
-}
+/* CONTENTS */
 
-.items {
-  /* contains individual portfolio items as class "item"*/
-  flex: 1 1 auto; /*as a child of items section, with margins either side*/
-}
-
-.item {
-  /*contains photo|itemspacerS|desc (title, tags, desc, link|itemspacerL*/
-  display: flex;
-  margin-bottom: 5rem;
-}
-
-.itemPhoto {
-  flex: 5;
-  box-sizing: border-box;
-  background: top left/contain no-repeat;
-  width: 270px;
-  height: 0;
-  padding-bottom: 25%;
-  /*
-  background-size: cover;
-  height: 240px;
-  width:440px;
-  min-width: 440px;
-  max-width: 440px;
-*/
-}
 .koprImgSrc {
   background-image: url("./resources/kopr_image.png");
 }
@@ -172,21 +133,6 @@ h2 {
   background-image: url("./resources/whether_image.png");
 }
 
-.itemSpacer {
-  flex: 0.5;
-  flex-grow: 0.5;
-  box-sizing: border-box;
-}
-
-.itemDesc {
-  flex-grow: 1;
-  flex: 5;
-  box-sizing: border-box;
-}
-
-.itemDesc p {
-  font-size: 1.5rem;
-}
 
 h3 {
   font-family: "Windsor", Arial, Helvetica, sans-serif; /*change font to smth else (?)*/
@@ -361,13 +307,20 @@ footer img {
     flex-grow: 0.5;
     max-width: 350px;
     min-width: 300px;
+  }  
+  header {
+    height: 8rem;
   }
+  .hero {
+    /*image background and its position, margins, full width, etc.*/
+    margin-top: 8rem;
 }
 
 @media only screen and (max-width: 650px) {
   html {
     font-size: 8px;
   }
+
   .contents .margin {
     flex: 0.4;
   }
