@@ -17,9 +17,9 @@
     </script>
 
     <title>Vlad Frolov</title>
-    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="theme-color" content="#fffbf1" />
-    <link rel="apple-touch-icon" href="/resources/logo192.png" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
     <link href="/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -29,115 +29,47 @@
   </head>
 
   <body>
+    <script>
+      function showAbout() {
+        document.getElementById("aboutMe").style.display = "block";
+      }
+      function hideAbout() {
+        document.getElementById("aboutMe").style.display = "none";
+      }
+    </script>
+
+<div class="aboutBox" id="aboutMe" onClick="hideAbout()">
+  <div class="aboutText">
+    <p>
+      I’ve been designing for a <i>looong</i> time. I’ve gone from making album covers for my band as a teenager, through creating a visual identity for my university’s radio station, to social media and desktop publishing in the last few years.
+    </p>
+    <p>
+      I have a <span>bachelor’s degree in Psychology</span> from Goldsmiths, University of London, and&nbsp;I’ve also studied <span>Creative Writing</span> at Central Saint Martins, UAL; <span>Art Direction and Copywriting</span> at SCA&nbsp;2.0; and an&nbsp;MA in&nbsp;<span>Contemporary Art Theory</span>, again in Goldsmiths.
+    </p>
+    <p>
+      During the 2020 lockdown, I decided to try my hand at&nbsp;web design and programming, so I completed a&nbsp;Codecademy course in <span>Frontend development</span>. And although bringing websites to life is fun, what I&nbsp;enjoy most is creating beautiful, functional and memorable designs. So after several years, I&nbsp;am&nbsp;back to basics, working with graphic design, learning 3D, and <span>exploring the use of generative  AI</span> in&nbsp;photography, adding to my wide array of&nbsp;creative tools.
+    </p>
+    <p><span>Ping me anytime at vladfrolov /at/ email.cz</span></p>
+  </div>
+</div>
     <header>
-      <div class="pageWrap">
-        <nav>
-          <h1><a href="http://xladdd.github.io/">Vlad Frolov</a></h1>
-          <ul>
-            <li><a href="https://github.com/xladdd" id="navlink">GitHub</a></li>
-            <li><a href="./about.html" id="navlink">About</a></li>
-          </ul>
-        </nav>
-      </div>
+      <img src="./photos/logo.svg" class="logo"></img>
+      <img src="./photos/image.svg" class="image"></img>
+      <img src="./photos/logo2.svg" class="logo"></img>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="pageWrap">
-          <h2>Hi, I’m Vlad,<br />and&nbsp;I’m&nbsp;a graphic&nbsp;designer</h2>
-        </div>
-      </section>
-
-      <div class="pageWrap">
-        <div class="item">
-          <div class="itemPhoto koprImgSrc"></div>
-          <div class="itemDesc">
-            <h3>KOPR</h3>
-            <ul class="tags">
-              <li class="itemTech">Branding</li>
-              <li class="itemTech">Restaurant</li>
-              <li class="itemLink">
-                <a
-                  href="https://www.behance.net/gallery/185944009/Restaurace-Kopr"
-                  >Behance</a
-                >
-              </li>
-            </ul>
-            <p>Eastern European plant-based bistro dining.</p>
-            <a
-              href="https://www.behance.net/gallery/185944009/Restaurace-Kopr"
-              class="itemAction"
-              >Get hungry →</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="itemPhoto probioImgSrc"></div>
-          <div class="itemDesc">
-            <h3>PROBIO</h3>
-            <ul class="tags">
-              <li class="itemTech">Branding</li>
-              <li class="itemTech">Product</li>
-              <li class="itemLink">
-                <a href="https://www.behance.net/gallery/185396159/Mouky-Probio"
-                  >Behance</a
-                >
-              </li>
-            </ul>
-            <p>From the field, to you.</p>
-            <a
-              href="https://www.behance.net/gallery/185396159/Mouky-Probio"
-              class="itemAction"
-              >Take a peek →</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="itemPhoto tofuImgSrc"></div>
-          <div class="itemDesc">
-            <h3>TOFU</h3>
-            <ul class="tags">
-              <li class="itemTech">Web</li>
-              <li class="itemTech">HTML</li>
-              <li class="itemLink">
-                <a href="https://github.com/xladdd/tofu">GitHub</a>
-              </li>
-            </ul>
-            <p>
-              A catalogue of simple vegan recipes for people that can't tell the
-              difference between tofu and tempeh.
-            </p>
-            <a href="https://tofutofutofu.netlify.app/" class="itemAction"
-              >Go vegan →</a
-            >
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="itemPhoto whetherImgSrc"></div>
-          <div class="itemDesc">
-            <h3>WHETHER</h3>
-            <ul class="tags">
-              <li class="itemTech">Web</li>
-              <li class="itemTech">React</li>
-              <li class="itemLink">
-                <a href="https://github.com/xladdd/whether">GitHub</a>
-              </li>
-            </ul>
-            <p>Helps you find out whether it’s sunny, rainy, or even stormy.</p>
-            <a href="https://whetherrrrr.netlify.app/" class="itemAction"
-              >Try it out →</a
-            >
-          </div>
-        </div>
-      </div>
+      <div class="full-width-container img1" onclick="window.location='https://www.behance.net/gallery/185944009/Restaurace-Kopr';"></div>
+      <div class="full-width-container img3" onclick="window.location='https://www.behance.net/gallery/185396159/Mouky-Probio';"></div>
+      <div class="full-width-container img2" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
+      <div class="full-width-container img4" onclick="window.location='https://tofutofutofu.netlify.app';"></div>
+      <div class="full-width-container img5" onclick="window.location='https://www.behance.net/gallery/185944009/Restaurace-Kopr';"></div>
+      <div class="full-width-container img9" onclick="window.location='https://whetherrrrr.netlify.app/';"></div>
+      <div class="full-width-container img6" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
+      <div class="full-width-container img7" onclick="window.location='https://www.behance.net/gallery/185396159/Mouky-Probio';"></div>
+      <div class="full-width-container img8" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
     </main>
 
-    <footer>
-      <p>Handmade in the Czech Republic</p>
-      <img src="./resources/footer_photo.png" />
-    </footer>
+    <div class="about" onClick="showAbout()"></div>
   </body>
 </html>

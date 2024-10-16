@@ -1,16 +1,11 @@
 @font-face {
-  font-family: "LynoJean";
-  src: url("/resources/LynoJean.otf") format("opentype");
-}
-
-@font-face {
   font-family: "Windsor";
   src: url("/resources/Windsor_BT.ttf") format("opentype");
 }
 
 :root {
   --bg: #fffbf1;
-  --text: #134e87;
+  --text: #0d1216;
   --pale: #e2e2e2;
   --highlight: #fff585;
 }
@@ -25,320 +20,170 @@
 html {
   background-color: var(--bg);
   color: var(--text);
-  font-size: 10px;
+  font-size: 14px;
   box-sizing: border-box;
+  width: 100vw;
 }
 
-.pageWrap {
-  padding-left: 35px;
-  padding-right: 35px;
-  width: 1000px;
-  margin: auto;
+/* Container for header and main sections */
+body {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  flex-direction: row; /* Align header and main side by side on larger screens */
 }
-
-/* HEADER */
 
 header {
-  background-color: var(--bg);
-  position: fixed;
-  height: 10rem;
-  width: 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  margin: 0;
-  box-sizing: border-box;
-  z-index: 80;
-  top: 0;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1000px;
-}
-
-h1 a {
-  /*the correct text colour*/
-  font-family: "Windsor", Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  color: var(--text);
-  text-decoration: none;
-}
-h1 a:visited {
-  color: var(--text);
-}
-
-nav ul {
-  float: right;
-}
-
-nav li {
-  color: var(--pale);
-  list-style-type: none;
-  float: left;
-  margin-left: 20px;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-nav li a {
-  color: var(--pale);
-  text-decoration: none;
-}
-nav li a:visited {
-  color: var(--pale);
-  text-decoration: none;
-}
-
-/* HERO */
-
-main {
-  margin-top: 10rem;
-}
-
-.hero {
-  width: 100%;
-  background-image: url("./resources/heya.png");
-  height: 24rem;
-  align-items: center;
-  display: flex;
-  background-size: 100%;
-  background-position-y: 90%;
-  background-position-x: 100%;
-  background-repeat: no-repeat;
-  background: contain;
-}
-
-h2 {
-  font-family: "Windsor", Arial, Helvetica, sans-serif;
-  font-size: 4.3rem;
-  width: 1000px;
-  color: var(--bg);
-  text-shadow: 4px 4px var(--text);
-}
-
-/* ITEMS */
-
-.item {
-  margin-top: 5rem;
-  width: 1000px;
-  display: inline-block;
-  font-size: 0;
-}
-
-.itemPhoto {
-  background: top left/contain no-repeat;
-  width: 50%;
-  height: 300px;
-  display: inline-block;
-}
-
-.koprImgSrc {
-  background-image: url("./resources/kopr_image.png");
-}
-.probioImgSrc {
-  background-image: url("./resources/probio_image.png"); /*change!*/
-}
-.tofuImgSrc {
-  background-image: url("./resources/tofu_image.png");
-}
-.whetherImgSrc {
-  background-image: url("./resources/whether_image.png");
-}
-
-.itemDesc {
-  padding-left: 3rem;
-  padding-right: -3rem;
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-}
-
-h3 {
-  font-family: "Windsor", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: bolder;
-  line-height: 100%;
-  color: var(--text);
-  text-shadow: 4px -4px var(--highlight);
-}
-
-.tags {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.tags li {
-  list-style-type: none;
-  display: inline;
-  text-align: center;
-  padding: 3px 6px;
-  font-size: 1rem;
-  margin-right: 1rem;
-}
-
-.itemTech {
-  color: var(--text);
-  background-color: var(--highlight);
-}
-
-.itemLink {
-  background-color: var(--text);
-}
-
-.itemLink a {
-  text-decoration: none;
-  color: var(--pale);
-}
-
-.itemLink a:visited {
-  text-decoration: none;
-  color: var(--pale);
-}
-
-.itemDesc p {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
-}
-
-.itemAction {
-  font-size: 1.3rem;
-  color: var(--text);
-}
-
-/* FOOTER */
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer img {
-  transform: scaleX(-1);
-  width: 300px;
-  margin-top: -40px;
-  margin-bottom: -20px;
-}
-
-.footerPhoto {
-  background-image: url("./resources/footer_photo.png");
-  min-width: 200px;
-  height: 150px;
-  background-size: 40%;
-  background-position-y: 90%;
-  background-position-x: 50%;
-  background-repeat: no-repeat;
-  transform: scaleX(-1);
-}
-
-/* ABOUT */
-.aboutMe img {
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-.aboutMe p {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.skills {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.skills ul {
+  flex: 1;
+  position: fixed; /* Make header fixed initially */
+  min-width: 40vw;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.proficiencies {
-  margin-right: 5rem;
+main {
+  flex: 1; /* Allow main to take remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-left: 40vw; /* Account for the fixed header width */
 }
 
-.proficiencies li {
+h1 {
+  font-family: "Windsor", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+header img {
+  display: block;
+}
+
+.logo {
+  height: 4.5rem;
+}
+
+.image {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Full-width container styles */
+.full-width-container {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  width: 100%; /* Full width of the main section */
+  height: 100vh; /* Set the desired height */
+  display: flex; /* Use flexbox for inner content alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Change cursor to pointer for click effect */
+}
+
+.about {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  z-index: 2;
+  right: 50px;
+  bottom: 50px;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-image: url(./photos/about.gif);
+}
+
+.aboutBox {
+  z-index: 3;
+  position: fixed;
+  height: 60vh;
+  width: 60vw;
   background-color: var(--highlight);
-  font-size: 1.3rem;
+  margin: 20vh 20vw;
+  padding: 40px;
+  display: none;
+}
+
+.aboutText p {
   margin-bottom: 1rem;
-  align-items: center;
-  width: fit-content;
-  padding: 1rem;
-  line-height: 2rem;
 }
 
-.bakasana {
-  background-image: url("./resources/bakasana.png");
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 100%;
+.aboutText p span {
+  font-weight: 600;
 }
 
-.tools li {
-  background-color: var(--pale);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  width: fit-content;
-  padding: 1rem;
-  line-height: 2rem;
-}
-
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 450px) {
-  html {
-    font-size: 7px;
+/* Make layout responsive: on small screens, stack elements vertically */
+@media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
-  .pageWrap {
-    width: 350px;
-    margin: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+
+  body {
+    /*flex-direction: column; /* Stack header and main vertically */
+    display: block;
+    height: 100vh; /* Body height should adjust based on content */
   }
+
   header {
-    width: 100%;
+    position: relative; /* Completely remove fixed position */
+    height: 60px; /* Adjust height based on content */
+    width: 100vw; /* Full width on mobile */
+    max-height: 60vh;
+    justify-content: space-evenly;
   }
-  nav {
-    width: 100%;
-  }
+
   main {
-    margin-top: 7rem;
+    margin-left: 0; /* Remove the left margin */
+    flex-grow: 1; /* Allow main to take available space */
+    max-width: 100vw;
   }
-  .hero {
-    width: auto;
-    height: 20rem;
+
+  .full-width-container {
+    height: 80vh;
   }
-  h2 {
-    width: 350px;
-    font-size: 3.5rem;
-    margin-top: 2rem;
+
+  .aboutBox {
+    margin: 10vh 10vw;
+    overflow-y: scroll;
   }
-  .item {
-    width: 350px;
-    margin: auto;
-    margin-top: 5rem;
-  }
-  .itemPhoto {
-    background-position: center;
-    width: 100%;
-    height: 141px;
-    display: inline-block;
-    margin-bottom: 3rem;
-  }
-  .itemDesc {
-    width: 100%;
-    display: inline;
-    padding-left: 5rem;
-  }
-  footer img {
-    transform: scaleX(-1);
-    width: 200px;
-    margin-top: -40px;
-    margin-bottom: -20px;
-  }
+}
+
+/* Image container classes */
+.img1 {
+  background-image: url(./photos/kopr-windows.png);
+}
+
+.img2 {
+  background-image: url(./photos/vilgain-hummus.webp);
+}
+
+.img3 {
+  background-image: url(./photos/probio-parade.png);
+}
+
+.img4 {
+  background-image: url(./photos/tofu.png);
+}
+
+.img5 {
+  background-image: url(./photos/kopr-posters.png);
+}
+
+.img6 {
+  background-image: url(./photos/vilgain-buttercups.png);
+}
+
+.img7 {
+  background-image: url(./photos/probio-extras.png);
+}
+
+.img8 {
+  background-image: url(./photos/vilgain-curry.webp);
+}
+
+.img9 {
+  background-image: url(./photos/whether.png);
 }
