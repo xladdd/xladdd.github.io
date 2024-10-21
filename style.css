@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Windsor";
-  src: url("/resources/Windsor_BT.ttf") format("opentype");
+  src: url("/Windsor_BT.ttf") format("opentype");
 }
 
 :root {
@@ -113,6 +113,28 @@ header img {
   font-weight: 600;
 }
 
+.footer {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.footer a {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Windsor;
+  text-decoration: none;
+  color: var(--text);
+  border: 5px solid var(--highlight);
+  background-color: var(--highlight);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.footer a:hover {
+  background-color: var(--pale); /* Changes the background color on hover */
+  border: 5px solid var(--pale);
+}
+
 /* Make layout responsive: on small screens, stack elements vertically */
 @media (max-width: 768px) {
   html,
@@ -148,6 +170,10 @@ header img {
   .aboutBox {
     margin: 10vh 10vw;
     overflow-y: scroll;
+  }
+
+  .footer {
+    margin-bottom: 18rem;
   }
 }
 
@@ -187,3 +213,31 @@ header img {
 .img9 {
   background-image: url(./photos/whether.png);
 }
+
+.img10 {
+  background-image: url(./photos/kosmas-tote.png);
+}
+
+.img11 {
+  background-image: url(./photos/kosmas-banner.png);
+}
+
+
+.img12 {
+  background-image: url(./photos/kosmas-web.gif);
+}
+
+
+.img13 {
+  background-image: url(./photos/kosmas-tees.gif);
+}
+
+.img14 {
+  background-image: url(./photos/kosmas-books.jpg);
+}
+
+.img15 {
+  background-image: url(./photos/vilgain-potato.WEBP);
+}
+
+
