@@ -222,11 +222,9 @@ header img {
   background-image: url(./photos/kosmas-banner.png);
 }
 
-
 .img12 {
   background-image: url(./photos/kosmas-web.gif);
 }
-
 
 .img13 {
   background-image: url(./photos/kosmas-tees.gif);
@@ -240,4 +238,18 @@ header img {
   background-image: url(./photos/vilgain-potato.WEBP);
 }
 
+.img16 {
+  background-image: url(./photos/vilgain-multivitamin.png);
+}
 
+.img17 {
+  background-image: url(./photos/vilgain-magnesium.png);
+}
+
+.img18 {
+  background-image: url(./photos/wellwet-letna.jpeg);
+}
+
+.img19 {
+  background-image: url(./photos/wellwet-stickers.jpg);
+}
