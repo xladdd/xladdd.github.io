@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Selected design work by Vlad Frolov, a designer based in Prague."
+    />
+    <title>Project — Vlad Frolov</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWJMMMT8WQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RWJMMMT8WQ");
+    </script>
+  </head>
+
+  <body class="project-page" data-page="project">
+    <header class="site-header">
+      <a class="wordmark" href="./">Vlad Frolov</a>
+      <a class="back-link" href="./#work">← All projects</a>
+    </header>
+
+    <main id="projectContent" class="project-main">
+      <section class="project-hero">
+        <div>
+          <div class="project-kicker" id="projectType"></div>
+          <h1 id="projectTitle"></h1>
+        </div>
+        <div>
+          <p class="project-summary" id="projectSummary"></p>
+          <dl class="project-facts">
+            <div>
+              <dt>Year</dt>
+              <dd id="projectYear"></dd>
+            </div>
+            <div>
+              <dt>Role</dt>
+              <dd id="projectRole"></dd>
+            </div>
+            <div>
+              <dt>Scope</dt>
+              <dd id="projectDisciplines"></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="project-lead-media">
+        <img id="projectLeadImage" src="" alt="" />
+      </div>
+
+      <section class="project-story">
+        <h2>The project</h2>
+        <div class="project-story-copy" id="projectStoryCopy"></div>
+      </section>
+
+      <section
+        class="project-gallery"
+        id="projectGallery"
+        aria-label="Project images"
+      ></section>
+
+      <nav class="project-end" aria-label="Project navigation">
+        <a id="nextProjectLink" href="#"></a>
+      </nav>
+    </main>
+
+    <section id="notFound" class="not-found" hidden>
+      <p class="eyebrow">404</p>
+      <h1 id="notFoundTitle">That project isn’t here.</h1>
+      <a class="button-link" href="./#work">See all projects</a>
+    </section>
+
+    <footer class="site-footer">
+      <span>Vlad Frolov</span>
+      <span>Designer in Prague</span>
+      <span>vlad /at/ frolov.cz</span>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

@@ -1,86 +1,152 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RWJMMMT8WQ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio of Vlad Frolov, a Prague-based designer working across social content, illustration, packaging and visual identity."
+        />
+        <title>Vlad Frolov — Designer</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <link rel="apple-touch-icon" href="./logo192.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RWJMMMT8WQ"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-RWJMMMT8WQ");
+        </script>
+    </head>
 
-      gtag("config", "G-RWJMMMT8WQ");
-    </script>
+    <body data-page="home">
+        <header class="site-header">
+            <a class="wordmark" href="./" aria-label="Vlad Frolov, home"
+                >Vlad Frolov</a
+            >
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <title>Vlad Frolov</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="theme-color" content="#fffbf1" />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link href="/style.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Space+Mono"
-    />
-  </head>
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow" id="heroEyebrow"></p>
+                    <h1 id="hero-title"></h1>
+                    <p class="hero-intro" id="heroIntro"></p>
+                </div>
 
-  <body>
-    <script>
-      function showAbout() {
-        document.getElementById("aboutMe").style.display = "block";
-      }
-      function hideAbout() {
-        document.getElementById("aboutMe").style.display = "none";
-      }
-    </script>
+                <div class="hero-badge" aria-hidden="true">
+                    <svg class="badge-ring" viewBox="0 0 240 240">
+                        <defs>
+                            <path
+                                id="homeBadgeCircle"
+                                d="M 120,120 m -91,0 a 91,91 0 1,1 182,0 a 91,91 0 1,1 -182,0"
+                            />
+                        </defs>
+                        <text>
+                            <textPath href="#homeBadgeCircle" startOffset="0%">
+                                VLAD FROLOV • DESIGN • IMAGE • TYPE • VLAD
+                                FROLOV •
+                            </textPath>
+                        </text>
+                    </svg>
+                    <img src="./logo192.png" alt="" />
+                </div>
+            </section>
 
-<div class="aboutBox" id="aboutMe" onClick="hideAbout()">
-  <div class="aboutText">
-    <p>
-      I’ve been designing for a <i>looong</i> time. I’ve gone from making album covers for my band as a teenager, through creating a visual identity for my university’s radio station, to social media and desktop publishing in the last few years.
-    </p>
-    <p>
-      I have a <span>bachelor’s degree in Psychology</span> from Goldsmiths, University of London, and&nbsp;I’ve also studied <span>Creative Writing</span> at Central Saint Martins, UAL; <span>Art Direction and Copywriting</span> at SCA&nbsp;2.0; and an&nbsp;MA in&nbsp;<span>Contemporary Art Theory</span>, again in Goldsmiths.
-    </p>
-    <p>
-      During the 2020 lockdown, I decided to try my hand at&nbsp;web design and programming, so I completed a&nbsp;Codecademy course in <span>Frontend development</span>. And although bringing websites to life is fun, what I&nbsp;enjoy most is creating beautiful, functional and memorable designs. So after several years, I&nbsp;am&nbsp;back to basics, working with graphic design, learning 3D, and <span>exploring the use of generative  AI</span> in&nbsp;photography, adding to my wide array of&nbsp;creative tools.
-    </p>
-    <p><span>Ping me anytime at vlad /at/ frolov.cz</span></p>
-  </div>
-</div>
-    <header>
-      <img src="./photos/logo.svg" class="logo"></img>
-      <img src="./photos/image.svg" class="image"></img>
-      <img src="./photos/logo2.svg" class="logo"></img>
-    </header>
+            <div class="skill-strip" aria-hidden="true">
+                <div class="skill-strip-track">
+                    <span>
+                        SOCIAL CONTENT • ILLUSTRATION • PACKAGING • VISUAL
+                        IDENTITY • EDITORIAL DESIGN •
+                    </span>
+                    <span>
+                        SOCIAL CONTENT • ILLUSTRATION • PACKAGING • VISUAL
+                        IDENTITY • EDITORIAL DESIGN •
+                    </span>
+                </div>
+            </div>
 
-    <main>
-      <div class="full-width-container img1" onclick="window.location='https://www.behance.net/gallery/185944009/Restaurace-Kopr';"></div>
-      <div class="full-width-container img12" onclick="window.location='https://www.behance.net/gallery/210685919/Kosmas';"></div>
-      <div class="full-width-container img16" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="full-width-container img3" onclick="window.location='https://www.behance.net/gallery/185396159/Mouky-Probio';"></div>
-      <div class="full-width-container img18"></div>
-      <div class="full-width-container img8" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="full-width-container img13" onclick="window.location='https://www.behance.net/gallery/210685919/Kosmas';"></div>
-      <div class="full-width-container img17" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="full-width-container img4" onclick="window.location='https://tofutofutofu.netlify.app';"></div>
-      <div class="full-width-container img15" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="full-width-container img11" onclick="window.location='https://www.behance.net/gallery/210685919/Kosmas';"></div>
-      <div class="full-width-container img5" onclick="window.location='https://www.behance.net/gallery/185944009/Restaurace-Kopr';"></div>
-      <div class="full-width-container img10" onclick="window.location='https://www.behance.net/gallery/210685919/Kosmas';"></div>
-      <div class="full-width-container img9" onclick="window.location='https://whetherrrrr.netlify.app/';"></div>
-      <div class="full-width-container img19"></div>
-      <div class="full-width-container img14" onclick="window.location='https://www.behance.net/gallery/210685919/Kosmas';"></div>
-      <div class="full-width-container img6" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="full-width-container img7" onclick="window.location='https://www.behance.net/gallery/185396159/Mouky-Probio';"></div>
-      <div class="full-width-container img2" onclick="window.location='https://www.behance.net/gallery/202682773/Vilgain';"></div>
-      <div class="footer"><a href="https://www.behance.net/xlad">More on Behance</a></div>
-    </main>
+            <section
+                class="work-section"
+                id="work"
+                aria-labelledby="work-title"
+            >
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="work-title">Projects</h2>
+                    <p>
+                        Client work and self-initiated studies, clearly marked.
+                    </p>
+                </div>
 
-    <div class="about" onClick="showAbout()"></div>
-  </body>
+                <div
+                    id="projectGrid"
+                    class="project-grid"
+                    aria-live="polite"
+                ></div>
+                <p id="projectStatus" class="status-message">
+                    Loading projects…
+                </p>
+            </section>
+
+            <section
+                class="about-section"
+                id="about"
+                aria-labelledby="about-title"
+            >
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title"></h2>
+                </div>
+                <div class="about-copy" id="aboutCopy"></div>
+                <div class="capabilities" aria-labelledby="capabilities-title">
+                    <h3 id="capabilities-title">Capabilities</h3>
+                    <ul id="capabilitiesList"></ul>
+                </div>
+            </section>
+
+            <section
+                class="contact-section"
+                id="contact"
+                aria-labelledby="contact-title"
+            >
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title">
+                    Let’s make something worth looking at.
+                </h2>
+                <p id="contactText"></p>
+                <div class="contact-links">
+                    <a id="emailLink" class="button-link" href="#"
+                        >Email me ↗</a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Vlad Frolov</span>
+            <span>Designer in Prague</span>
+            <span id="copyright"></span>
+        </footer>
+
+        <script src="./script.js" defer></script>
+    </body>
 </html>

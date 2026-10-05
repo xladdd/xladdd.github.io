@@ -1,0 +1,414 @@
+{
+  "site": {
+    "eyebrow": "Designer / Prague",
+    "headline": "Ideas made visual.",
+    "intro": "I’m Vlad Frolov, a designer working across social content, illustration, packaging and visual identity. I turn clear ideas into images with character.",
+    "about": {
+      "title": "Clear ideas, strong images.",
+      "paragraphs": [
+        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to stop and look at. My work moves between image making, typography, packaging and digital formats.",
+        "I’m currently looking for a design role focused on social media and illustration. My background in editorial production and frontend development also helps me carry concepts cleanly from first sketch to finished asset."
+      ]
+    },
+    "capabilities": [
+      "Social content",
+      "Illustration and image making",
+      "Visual identity",
+      "Packaging",
+      "Editorial layout",
+      "Digital design"
+    ],
+    "contact": {
+      "email": "vlad@frolov.cz",
+      "text": "For roles, freelance work, collaborations, or a chat about a project, send me an email."
+    }
+  },
+  "projects": [
+    {
+      "id": "vilgain",
+      "title": "Vilgain",
+      "type": "Client work",
+      "year": "2024",
+      "role": "Designer",
+      "accent": "#ff6b35",
+      "disciplines": ["Packaging", "Art direction", "Product imagery"],
+      "summary": "Selected packaging and product visuals created for Vilgain across food and performance products.",
+      "story": [
+        "This selection brings together packaging work for a wide product range, from prepared food and snacks to supplements. Each format needed to stay direct and legible while fitting into Vilgain’s broader visual system.",
+        "The work balances restrained packaging with energetic product imagery, using ingredients, movement and tightly controlled colour to give each product its own appetite and purpose."
+      ],
+      "cover": {
+        "src": "./photos/vilgain-curry.webp",
+        "alt": "Vilgain red curry beef packaging surrounded by serving ingredients"
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "landscape"
+      },
+      "gallery": [
+        {
+          "src": "./photos/vilgain-hummus.webp",
+          "alt": "Two jars of Vilgain hummus in a food setting",
+          "layout": "wide",
+          "caption": "Food packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/sensual-flow.webp",
+          "alt": "Vilgain Sensual Flow supplement bottle floating above matching capsules",
+          "layout": "wide",
+          "caption": "Supplement campaign image"
+        },
+        {
+          "src": "./photos/projects/vilgain/sweetcorn.webp",
+          "alt": "Vilgain sweetcorn can with corn kernels",
+          "layout": "half",
+          "caption": "Pantry packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/borlotti-beans.webp",
+          "alt": "Vilgain Borlotti beans can with beans",
+          "layout": "half",
+          "caption": "Pantry packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/sweet-potato-pack.png",
+          "alt": "Vilgain sweet potato chips package on an orange background",
+          "layout": "tall",
+          "caption": "Snack packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/sweet-potato-lifestyle.webp",
+          "alt": "A hand holding a sweet potato chip above a serving bowl",
+          "layout": "tall",
+          "caption": "Snack packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/magnesium-drops.webp",
+          "alt": "Vilgain magnesium drops bottle suspended in a blue water scene",
+          "layout": "wide",
+          "caption": "Supplement campaign image"
+        },
+        {
+          "src": "./photos/projects/vilgain/energy-bites-pack.webp",
+          "alt": "Vilgain energy bites package with chocolate bites",
+          "layout": "half",
+          "caption": "Snack packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/energy-bites-overhead.webp",
+          "alt": "Chocolate energy bites photographed from above",
+          "layout": "half",
+          "caption": "Product photography"
+        },
+        {
+          "src": "./photos/projects/vilgain/pesto-spoon.webp",
+          "alt": "A spoon lifting pesto from a Vilgain jar",
+          "layout": "tall",
+          "caption": "Food imagery"
+        },
+        {
+          "src": "./photos/projects/vilgain/pesto-pasta-action.webp",
+          "alt": "Pesto being spooned onto a plate of pasta",
+          "layout": "tall",
+          "caption": "Food imagery"
+        },
+        {
+          "src": "./photos/projects/vilgain/green-peas.webp",
+          "alt": "Vilgain green peas can beside a salad and peas",
+          "layout": "half",
+          "caption": "Pantry range"
+        },
+        {
+          "src": "./photos/projects/vilgain/cannellini-beans.webp",
+          "alt": "Vilgain Cannellini beans can beside a salad and beans",
+          "layout": "half",
+          "caption": "Pantry range"
+        },
+        {
+          "src": "./photos/projects/vilgain/protein-milkshake-pack.webp",
+          "alt": "Vilgain vanilla protein milkshake package",
+          "layout": "tall",
+          "caption": "Drink packaging"
+        },
+        {
+          "src": "./photos/projects/vilgain/protein-milkshake-lifestyle.webp",
+          "alt": "A Vilgain protein milkshake package being placed in a gym bag",
+          "layout": "tall",
+          "caption": "Lifestyle image"
+        },
+        {
+          "src": "./photos/vilgain-buttercups.png",
+          "alt": "Chocolate and nut butter cups moving through a caramel splash",
+          "layout": "wide",
+          "caption": "Product image making"
+        },
+        {
+          "src": "./photos/vilgain-multivitamin.png",
+          "alt": "Vilgain multivitamin packaging with floating fruit and vegetables",
+          "layout": "half",
+          "caption": "Performance supplements"
+        },
+        {
+          "src": "./photos/vilgain-magnesium.png",
+          "alt": "Vilgain magnesium package photographed with training equipment",
+          "layout": "half",
+          "caption": "Performance supplements"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "kosmas",
+      "title": "Kosmas",
+      "type": "Concept project",
+      "year": "2024",
+      "role": "Designer",
+      "accent": "#ff4538",
+      "disciplines": ["Visual identity", "Campaign", "Digital design"],
+      "summary": "A self-initiated identity and campaign direction for Czech bookseller Kosmas.",
+      "story": [
+        "The concept makes books feel physical, immediate and a little unruly. Condensed type, halftone imagery and a red-led palette give the brand a voice that can be literary without becoming precious.",
+        "The system stretches across e-commerce, motion, outdoor-style graphics and merchandise, keeping a recognizable tone while leaving room for changing books, authors and messages."
+      ],
+      "cover": {
+        "src": "./photos/kosmas-banner.png",
+        "alt": "Kosmas campaign image of books becoming red birds against a blue sky"
+      },
+      "card": {
+        "size": "narrow",
+        "orientation": "portrait"
+      },
+      "gallery": [
+        {
+          "src": "./photos/projects/kosmas/storefront.webp",
+          "alt": "Kosmas identity applied to a red bookstore storefront",
+          "layout": "wide",
+          "caption": "Storefront identity"
+        },
+        {
+          "src": "./photos/projects/kosmas/mobile-site.webp",
+          "alt": "Kosmas mobile website concept on a phone",
+          "layout": "half",
+          "caption": "Mobile design"
+        },
+        {
+          "src": "./photos/projects/kosmas/desktop-site.webp",
+          "alt": "Kosmas website interface shown on a desktop display",
+          "layout": "half",
+          "caption": "E-commerce system"
+        },
+        {
+          "src": "./photos/projects/kosmas/laptop-site.gif",
+          "alt": "Animated Kosmas website concept shown on a laptop outdoors",
+          "layout": "wide",
+          "caption": "Responsive digital direction"
+        },
+        {
+          "src": "./photos/projects/kosmas/campaign-banner.gif",
+          "alt": "Animated Kosmas promotional banner",
+          "layout": "wide",
+          "caption": "Campaign system"
+        },
+        {
+          "src": "./photos/projects/kosmas/t-shirt.gif",
+          "alt": "Animated Kosmas graphic T-shirt concept",
+          "layout": "half",
+          "caption": "Merchandise"
+        },
+        {
+          "src": "./photos/projects/kosmas/tote.gif",
+          "alt": "Animated Kosmas tote bag with a typographic slogan among flowering trees",
+          "layout": "half",
+          "caption": "Merchandise"
+        },
+        {
+          "src": "./photos/kosmas-books.jpg",
+          "alt": "Halftone red books hanging from flowering branches",
+          "layout": "half",
+          "caption": "Campaign image"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "kopr",
+      "title": "Kopr",
+      "type": "Concept project",
+      "year": "2023",
+      "role": "Designer",
+      "accent": "#00d768",
+      "disciplines": ["Visual identity", "Typography", "Campaign"],
+      "summary": "A self-initiated restaurant identity built around a direct wordmark and a flexible line motif.",
+      "story": [
+        "Kopr is an identity study for a contemporary restaurant. The visual language pairs an assertive serif wordmark with a fine, wandering line inspired by stems, herbs and the long shape of dill.",
+        "A small palette of black, green, ochre and warm neutrals gives the system enough range for storefront graphics, posters and event communication while keeping the restaurant recognizable."
+      ],
+      "cover": {
+        "src": "./photos/kopr-windows.png",
+        "alt": "Kopr restaurant identity applied to a storefront"
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "landscape"
+      },
+      "gallery": [
+        {
+          "src": "./photos/projects/kopr/plates.webp",
+          "alt": "Colourful plated dishes photographed from above",
+          "layout": "wide",
+          "caption": "Restaurant imagery"
+        },
+        {
+          "src": "./photos/projects/kopr/dish-top.webp",
+          "alt": "Dessert plate framed by the Kopr line motif",
+          "layout": "half",
+          "caption": "Image system"
+        },
+        {
+          "src": "./photos/projects/kopr/dish-hand.webp",
+          "alt": "A hand holding a plated dish framed by the Kopr line motif",
+          "layout": "half",
+          "caption": "Image system"
+        },
+        {
+          "src": "./photos/projects/kopr/menu.webp",
+          "alt": "Kopr menu on a clipboard beside a plated dessert",
+          "layout": "half",
+          "caption": "Menu design"
+        },
+        {
+          "src": "./photos/projects/kopr/stationery.webp",
+          "alt": "Kopr business card and gift certificate with fresh dill",
+          "layout": "half",
+          "caption": "Stationery"
+        },
+        {
+          "src": "./photos/projects/kopr/event-posters.webp",
+          "alt": "Kopr restaurant event posters displayed on a brass grid",
+          "layout": "wide",
+          "caption": "Event posters"
+        },
+        {
+          "src": "./photos/projects/kopr/window-detail.webp",
+          "alt": "Kopr storefront seen through a rain-covered window",
+          "layout": "wide",
+          "caption": "Atmosphere"
+        },
+        {
+          "src": "./photos/projects/kopr/brand-card.webp",
+          "alt": "Green Kopr identity card with a dill illustration",
+          "layout": "half",
+          "caption": "Core identity"
+        },
+        {
+          "src": "./photos/projects/kopr/closed-notice.webp",
+          "alt": "Kopr closure notice using the flexible line device",
+          "layout": "half",
+          "caption": "Social communication"
+        },
+        {
+          "src": "./photos/projects/kopr/table-detail.webp",
+          "alt": "Restaurant table framed by the green Kopr line motif",
+          "layout": "half",
+          "caption": "Social image"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "probio",
+      "title": "Probio",
+      "type": "Concept project",
+      "year": "2023",
+      "role": "Designer",
+      "accent": "#163cff",
+      "disciplines": ["Packaging", "Illustration", "Art direction"],
+      "summary": "A speculative packaging redesign for an organic flour range with a bold colour and illustration system.",
+      "story": [
+        "This speculative redesign gives a broad flour range an easy wayfinding system. Crop illustrations identify ingredients while strong colour blocks make varieties quick to distinguish on shelf.",
+        "A simple rising-sun device ties the range together and adapts to smaller baking ingredients, creating one family from many different products."
+      ],
+      "cover": {
+        "src": "./photos/probio-parade.png",
+        "alt": "A colourful range of illustrated Probio flour packages"
+      },
+      "card": {
+        "size": "offset",
+        "orientation": "landscape"
+      },
+      "gallery": [
+        {
+          "src": "./photos/projects/probio/flour-hero.webp",
+          "alt": "Probio wheat flour package against a yellow background",
+          "layout": "wide",
+          "caption": "Hero packaging"
+        },
+        {
+          "src": "./photos/projects/probio/full-range.webp",
+          "alt": "The complete colourful Probio flour range",
+          "layout": "wide",
+          "caption": "Range system"
+        },
+        {
+          "src": "./photos/projects/probio/range-flatlay.webp",
+          "alt": "Probio flour packages arranged in a colourful grid",
+          "layout": "wide",
+          "caption": "Colour and illustration system"
+        },
+        {
+          "src": "./photos/projects/probio/rye-flour.webp",
+          "alt": "Front, side and back views of a green Probio rye flour package",
+          "layout": "wide",
+          "caption": "Package architecture"
+        },
+        {
+          "src": "./photos/projects/probio/baking-ingredients.webp",
+          "alt": "Probio baking ingredients in yellow packages",
+          "layout": "half",
+          "caption": "Range extension"
+        },
+        {
+          "src": "./photos/projects/probio/baking.webp",
+          "alt": "Hands kneading dough beside Probio flour packaging",
+          "layout": "half",
+          "caption": "Product context"
+        },
+        {
+          "src": "./photos/projects/probio/illustration-system.webp",
+          "alt": "Yellow grain illustrations and Probio sun mark on a neutral background",
+          "layout": "wide",
+          "caption": "Illustration system"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "wellwet",
+      "title": "Wellwet",
+      "type": "Client work",
+      "year": "2025",
+      "role": "Designer",
+      "accent": "#ff2a8a",
+      "disciplines": ["Social content", "Illustration", "Campaign"],
+      "summary": "Social and campaign work for Wellwet.",
+      "story": [],
+      "cover": {
+        "src": "./photos/wellwet-letna.jpeg",
+        "alt": "Wellwet campaign poster photographed in Prague"
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "portrait"
+      },
+      "gallery": [
+        {
+          "src": "./photos/wellwet-stickers.jpg",
+          "alt": "A sheet of gold Wellwet smile stickers",
+          "layout": "wide",
+          "caption": "Campaign detail"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
