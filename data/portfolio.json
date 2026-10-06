@@ -6,8 +6,8 @@
     "about": {
       "title": "Clear ideas, strong images.",
       "paragraphs": [
-        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to stop and look at. My work moves between image making, typography, packaging and digital formats.",
-        "I’m currently looking for a design role focused on social media and illustration. My background in editorial production and frontend development also helps me carry concepts cleanly from first sketch to finished asset."
+        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to stop and look at.",
+        "My work moves between image making, typography, packaging and digital formats. My background in editorial production and frontend development also helps me carry concepts cleanly from first sketch to finished asset."
       ]
     },
     "capabilities": [
@@ -25,21 +25,332 @@
   },
   "projects": [
     {
+      "id": "taktik",
+      "title": "Taktik",
+      "type": "Client work",
+      "year": "Ongoing",
+      "role": "Designer",
+      "accent": "#ff9200",
+      "disciplines": ["Editorial design", "Cover design", "Layout systems"],
+      "summary": "Cover and interior design for educational books and workbooks published by Taktik.",
+      "story": [
+        "I design covers and interior layouts for Taktik educational titles across subjects and age groups. The work has to make dense learning material clear, approachable and easy to navigate, while giving each series a distinct visual character.",
+        "Cover systems balance subject cues, illustration, photography and strong colour. Inside, reusable grids, typographic hierarchies and exercise structures support teachers and students across long, content-heavy books."
+      ],
+      "cover": {
+        "src": "./photos/projects/taktik/taktik-covers.webp",
+        "alt": "A selection of Taktik history, Slovak language and literature textbook covers"
+      },
+      "card": {
+        "size": "narrow",
+        "orientation": "landscape"
+      },
+      "gallery": [
+        {
+          "src": "./photos/projects/taktik/taktik-covers2.webp",
+          "alt": "A coordinated set of colourful Taktik mathematics and reading workbook covers",
+          "layout": "wide",
+          "caption": "Cover systems"
+        },
+        {
+          "src": "./photos/projects/taktik/taktik-layouts3.webp",
+          "alt": "Two educational book spreads combining science, geography and language exercises",
+          "layout": "wide",
+          "caption": "Multi-subject layout system"
+        },
+        {
+          "src": "./photos/projects/taktik/taktik-layouts.webp",
+          "alt": "An illustrated primary school workbook spread with countryside scenes and exercises",
+          "layout": "half",
+          "caption": "Illustrated workbook layout"
+        },
+        {
+          "src": "./photos/projects/taktik/taktik-layouts2.webp",
+          "alt": "A mathematics workbook spread using green section markers, diagrams and exercise grids",
+          "layout": "half",
+          "caption": "Information hierarchy"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "wellwet",
+      "title": "Wellwet",
+      "type": "Client work",
+      "year": "Ongoing",
+      "role": "Designer",
+      "accent": "#ff2a8a",
+      "disciplines": ["Social content", "Illustration", "Campaign"],
+      "summary": "Social campaigns, event identities and image making for Prague party series Wellwet.",
+      "story": [
+        "I create campaign systems for Wellwet that carry each event from announcement to line-up, artist reveals and real-world promotion. The work combines expressive typography, illustration, photography and changing colour palettes while keeping a recognizable energy across the series.",
+        "The posts below are grouped as they appeared on social media. Open any tile and move sideways through the complete carousel."
+      ],
+      "cover": {
+        "src": "./photos/projects/wellwet/ww7a-01.webp",
+        "alt": "Pink and blue Wellwet artwork reading Do you miss me?"
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "portrait"
+      },
+      "gallery": [
+        {
+          "src": "./photos/projects/wellwet/wellwet-hero.webp",
+          "alt": "Blue and green illustrated poster for Wellwet 9",
+          "layout": "half",
+          "display": "float-left",
+          "caption": "Wellwet 9 poster"
+        },
+        {
+          "src": "./photos/projects/wellwet/wellwet10-poster.webp",
+          "alt": "Black and pink Wellwet 10 event poster",
+          "layout": "half",
+          "display": "float-right",
+          "caption": "Wellwet 10 poster"
+        },
+        {
+          "src": "./photos/projects/wellwet/wellwet7-poster.webp",
+          "alt": "Green and yellow Wellwet 7 event poster",
+          "layout": "half",
+          "display": "float-center",
+          "caption": "Wellwet 7 poster"
+        },
+        {
+          "src": "./photos/projects/wellwet/poster-in-prague.webp",
+          "alt": "Wellwet campaign poster photographed in Prague",
+          "layout": "half",
+          "display": "float-photo",
+          "caption": "Posters in the city"
+        },
+        {
+          "src": "./photos/projects/wellwet/sticker-sheet.webp",
+          "alt": "A sheet of gold Wellwet smile stickers",
+          "layout": "half",
+          "display": "float-small",
+          "caption": "Sticker sheet"
+        }
+      ],
+      "published": true,
+      "posts": [
+        {
+          "title": "Wellwet 10",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww10-01.webp",
+              "alt": "Wellwet 10 social carousel, slide 1 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-02.webp",
+              "alt": "Wellwet 10 social carousel, slide 2 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-03.webp",
+              "alt": "Wellwet 10 social carousel, slide 3 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-04.webp",
+              "alt": "Wellwet 10 social carousel, slide 4 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-05.webp",
+              "alt": "Wellwet 10 social carousel, slide 5 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-06.webp",
+              "alt": "Wellwet 10 social carousel, slide 6 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-07.webp",
+              "alt": "Wellwet 10 social carousel, slide 7 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-08.webp",
+              "alt": "Wellwet 10 social carousel, slide 8 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-09.webp",
+              "alt": "Wellwet 10 social carousel, slide 9 of 10"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww10-10.webp",
+              "alt": "Wellwet 10 social carousel, slide 10 of 10"
+            }
+          ]
+        },
+        {
+          "title": "Wellwet 9",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww9-01.webp",
+              "alt": "Wellwet 9 social carousel, slide 1 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-02.webp",
+              "alt": "Wellwet 9 social carousel, slide 2 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-03.webp",
+              "alt": "Wellwet 9 social carousel, slide 3 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-04.webp",
+              "alt": "Wellwet 9 social carousel, slide 4 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-05.webp",
+              "alt": "Wellwet 9 social carousel, slide 5 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-06.webp",
+              "alt": "Wellwet 9 social carousel, slide 6 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-07.webp",
+              "alt": "Wellwet 9 social carousel, slide 7 of 7"
+            }
+          ]
+        },
+        {
+          "title": "Wellwet 7 — announcement",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww7a-01.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 1 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-02.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 2 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-03.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 3 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-04.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 4 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-05.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 5 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-06.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 6 of 7"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7a-07.webp",
+              "alt": "Wellwet 7 announcement carousel, slide 7 of 7"
+            }
+          ]
+        },
+        {
+          "title": "Wellwet 7 — artists",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww7b-01.webp",
+              "alt": "Wellwet 7 artist carousel, slide 1 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-02.webp",
+              "alt": "Wellwet 7 artist carousel, slide 2 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-03.webp",
+              "alt": "Wellwet 7 artist carousel, slide 3 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-04.webp",
+              "alt": "Wellwet 7 artist carousel, slide 4 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-05.webp",
+              "alt": "Wellwet 7 artist carousel, slide 5 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-06.webp",
+              "alt": "Wellwet 7 artist carousel, slide 6 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-07.webp",
+              "alt": "Wellwet 7 artist carousel, slide 7 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-08.webp",
+              "alt": "Wellwet 7 artist carousel, slide 8 of 9"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww7b-09.webp",
+              "alt": "Wellwet 7 artist carousel, slide 9 of 9"
+            }
+          ]
+        },
+        {
+          "title": "Wellwet 6",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww6-01.webp",
+              "alt": "Wellwet 6 social carousel, slide 1 of 6"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww6-02.webp",
+              "alt": "Wellwet 6 social carousel, slide 2 of 6"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww6-03.webp",
+              "alt": "Wellwet 6 social carousel, slide 3 of 6"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww6-04.webp",
+              "alt": "Wellwet 6 social carousel, slide 4 of 6"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww6-05.webp",
+              "alt": "Wellwet 6 social carousel, slide 5 of 6"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww6-06.webp",
+              "alt": "Wellwet 6 social carousel, slide 6 of 6"
+            }
+          ]
+        },
+        {
+          "title": "Wellwet stories",
+          "slides": [
+            {
+              "src": "./photos/projects/wellwet/ww9-story-01.webp",
+              "alt": "Blue and green Wellwet story graphic reading Come melt with us"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-story-02.webp",
+              "alt": "Blue and green Wellwet story graphic showing the night timetable"
+            },
+            {
+              "src": "./photos/projects/wellwet/ww9-story-03.webp",
+              "alt": "Blue and green Wellwet story graphic with event information"
+            }
+          ]
+        }
+      ],
+      "galleryStyle": "floating",
+      "galleryLabel": "Wellwet posters and physical applications"
+    },
+    {
       "id": "vilgain",
       "title": "Vilgain",
       "type": "Client work",
       "year": "2024",
       "role": "Designer",
       "accent": "#ff6b35",
-      "disciplines": ["Packaging", "Art direction", "Product imagery"],
+      "disciplines": ["Packaging", "Art direction"],
       "summary": "Selected packaging and product visuals created for Vilgain across food and performance products.",
       "story": [
         "This selection brings together packaging work for a wide product range, from prepared food and snacks to supplements. Each format needed to stay direct and legible while fitting into Vilgain’s broader visual system.",
         "The work balances restrained packaging with energetic product imagery, using ingredients, movement and tightly controlled colour to give each product its own appetite and purpose."
       ],
       "cover": {
-        "src": "./photos/vilgain-curry.webp",
-        "alt": "Vilgain red curry beef packaging surrounded by serving ingredients"
+        "src": "./photos/projects/vilgain/magnesium-jump-rope.webp",
+        "alt": "Vilgain magnesium supplement packaging with a skipping rope and training equipment"
       },
       "card": {
         "size": "wide",
@@ -47,7 +358,7 @@
       },
       "gallery": [
         {
-          "src": "./photos/vilgain-hummus.webp",
+          "src": "./photos/projects/vilgain/hummus.webp",
           "alt": "Two jars of Vilgain hummus in a food setting",
           "layout": "wide",
           "caption": "Food packaging"
@@ -62,13 +373,15 @@
           "src": "./photos/projects/vilgain/sweetcorn.webp",
           "alt": "Vilgain sweetcorn can with corn kernels",
           "layout": "half",
-          "caption": "Pantry packaging"
+          "caption": "Pantry packaging",
+          "display": "inset"
         },
         {
           "src": "./photos/projects/vilgain/borlotti-beans.webp",
           "alt": "Vilgain Borlotti beans can with beans",
           "layout": "half",
-          "caption": "Pantry packaging"
+          "caption": "Pantry packaging",
+          "display": "inset"
         },
         {
           "src": "./photos/projects/vilgain/sweet-potato-pack.png",
@@ -95,10 +408,10 @@
           "caption": "Snack packaging"
         },
         {
-          "src": "./photos/projects/vilgain/energy-bites-overhead.webp",
-          "alt": "Chocolate energy bites photographed from above",
+          "src": "./photos/projects/vilgain/multivitamin.webp",
+          "alt": "Vilgain multivitamin packaging with floating fruit and vegetables",
           "layout": "half",
-          "caption": "Product photography"
+          "caption": "Performance supplements"
         },
         {
           "src": "./photos/projects/vilgain/pesto-spoon.webp",
@@ -113,49 +426,43 @@
           "caption": "Food imagery"
         },
         {
-          "src": "./photos/projects/vilgain/green-peas.webp",
-          "alt": "Vilgain green peas can beside a salad and peas",
-          "layout": "half",
-          "caption": "Pantry range"
-        },
-        {
           "src": "./photos/projects/vilgain/cannellini-beans.webp",
           "alt": "Vilgain Cannellini beans can beside a salad and beans",
           "layout": "half",
           "caption": "Pantry range"
         },
         {
-          "src": "./photos/projects/vilgain/protein-milkshake-pack.webp",
-          "alt": "Vilgain vanilla protein milkshake package",
-          "layout": "tall",
-          "caption": "Drink packaging"
-        },
-        {
-          "src": "./photos/projects/vilgain/protein-milkshake-lifestyle.webp",
-          "alt": "A Vilgain protein milkshake package being placed in a gym bag",
-          "layout": "tall",
-          "caption": "Lifestyle image"
-        },
-        {
-          "src": "./photos/vilgain-buttercups.png",
+          "src": "./photos/projects/vilgain/buttercups.webp",
           "alt": "Chocolate and nut butter cups moving through a caramel splash",
           "layout": "wide",
           "caption": "Product image making"
-        },
-        {
-          "src": "./photos/vilgain-multivitamin.png",
-          "alt": "Vilgain multivitamin packaging with floating fruit and vegetables",
-          "layout": "half",
-          "caption": "Performance supplements"
-        },
-        {
-          "src": "./photos/vilgain-magnesium.png",
-          "alt": "Vilgain magnesium package photographed with training equipment",
-          "layout": "half",
-          "caption": "Performance supplements"
         }
       ],
       "published": true
+    },
+    {
+      "id": "robot",
+      "title": "Robot",
+      "type": "Product design",
+      "year": "2026",
+      "role": "Designer",
+      "accent": "#163cff",
+      "disciplines": ["UI design", "Product design", "Publishing workflow"],
+      "summary": "A publishing workflow application designed for my publishing house.",
+      "story": [
+        "Robot is an internal application for planning, producing and tracking books across a publishing workflow.",
+        "The case study is hidden while project material is being prepared."
+      ],
+      "cover": {
+        "src": "",
+        "alt": ""
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "landscape"
+      },
+      "gallery": [],
+      "published": false
     },
     {
       "id": "kosmas",
@@ -171,7 +478,7 @@
         "The system stretches across e-commerce, motion, outdoor-style graphics and merchandise, keeping a recognizable tone while leaving room for changing books, authors and messages."
       ],
       "cover": {
-        "src": "./photos/kosmas-banner.png",
+        "src": "./photos/projects/kosmas/hero-banner.webp",
         "alt": "Kosmas campaign image of books becoming red birds against a blue sky"
       },
       "card": {
@@ -222,7 +529,7 @@
           "caption": "Merchandise"
         },
         {
-          "src": "./photos/kosmas-books.jpg",
+          "src": "./photos/projects/kosmas/book-display.png",
           "alt": "Halftone red books hanging from flowering branches",
           "layout": "half",
           "caption": "Campaign image"
@@ -244,7 +551,7 @@
         "A small palette of black, green, ochre and warm neutrals gives the system enough range for storefront graphics, posters and event communication while keeping the restaurant recognizable."
       ],
       "cover": {
-        "src": "./photos/kopr-windows.png",
+        "src": "./photos/projects/kopr/window-system.webp",
         "alt": "Kopr restaurant identity applied to a storefront"
       },
       "card": {
@@ -329,7 +636,7 @@
         "A simple rising-sun device ties the range together and adapts to smaller baking ingredients, creating one family from many different products."
       ],
       "cover": {
-        "src": "./photos/probio-parade.png",
+        "src": "./photos/projects/probio/hero-parade.webp",
         "alt": "A colourful range of illustrated Probio flour packages"
       },
       "card": {
@@ -378,34 +685,6 @@
           "alt": "Yellow grain illustrations and Probio sun mark on a neutral background",
           "layout": "wide",
           "caption": "Illustration system"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "wellwet",
-      "title": "Wellwet",
-      "type": "Client work",
-      "year": "2025",
-      "role": "Designer",
-      "accent": "#ff2a8a",
-      "disciplines": ["Social content", "Illustration", "Campaign"],
-      "summary": "Social and campaign work for Wellwet.",
-      "story": [],
-      "cover": {
-        "src": "./photos/wellwet-letna.jpeg",
-        "alt": "Wellwet campaign poster photographed in Prague"
-      },
-      "card": {
-        "size": "wide",
-        "orientation": "portrait"
-      },
-      "gallery": [
-        {
-          "src": "./photos/wellwet-stickers.jpg",
-          "alt": "A sheet of gold Wellwet smile stickers",
-          "layout": "wide",
-          "caption": "Campaign detail"
         }
       ],
       "published": true

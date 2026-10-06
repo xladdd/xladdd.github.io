@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ffe600" />
     <meta
       name="description"
       content="Selected design work by Vlad Frolov, a designer based in Prague."
     />
     <title>Project — Vlad Frolov</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,6 +84,48 @@
         <a id="nextProjectLink" href="#"></a>
       </nav>
     </main>
+
+    <dialog
+      class="post-lightbox"
+      id="postLightbox"
+      aria-labelledby="postLightboxTitle"
+    >
+      <div class="post-lightbox-shell">
+        <header class="post-lightbox-header">
+          <h2 id="postLightboxTitle"></h2>
+          <span id="postLightboxCounter" aria-live="polite"></span>
+          <button
+            class="post-lightbox-close"
+            id="postLightboxClose"
+            type="button"
+            aria-label="Close post"
+          >
+            ×
+          </button>
+        </header>
+        <button
+          class="post-lightbox-nav post-lightbox-nav--previous"
+          id="postLightboxPrevious"
+          type="button"
+          aria-label="Previous image"
+        >
+          ←
+        </button>
+        <div
+          class="post-lightbox-track"
+          id="postLightboxTrack"
+          tabindex="0"
+        ></div>
+        <button
+          class="post-lightbox-nav post-lightbox-nav--next"
+          id="postLightboxNext"
+          type="button"
+          aria-label="Next image"
+        >
+          →
+        </button>
+      </div>
+    </dialog>
 
     <section id="notFound" class="not-found" hidden>
       <p class="eyebrow">404</p>
