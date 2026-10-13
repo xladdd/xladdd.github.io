@@ -1,7 +1,9 @@
 const DATA_URL = "./data/portfolio.json";
 
 async function loadPortfolio() {
-  const response = await fetch(DATA_URL, { headers: { Accept: "application/json" } });
+  const response = await fetch(DATA_URL, {
+    headers: { Accept: "application/json" },
+  });
   if (!response.ok) {
     throw new Error(`Could not load portfolio data (${response.status}).`);
   }
@@ -67,9 +69,7 @@ function renderImageGallery(project, gallery) {
     project.galleryLabel || `${project.title} project images`,
   );
   (project.gallery || []).forEach((media) => {
-    const displayClass = media.display
-      ? ` gallery-item--${media.display}`
-      : "";
+    const displayClass = media.display ? ` gallery-item--${media.display}` : "";
     const figure = createElement(
       "figure",
       `gallery-item gallery-item--${media.layout}${displayClass}`,
@@ -86,6 +86,77 @@ function renderImageGallery(project, gallery) {
     }
     gallery.appendChild(figure);
   });
+}
+
+function renderCaseStudy(project) {
+  const caseStudy = project.caseStudy;
+  const container = document.getElementById("caseStudyContent");
+  if (!caseStudy || !container) return;
+
+  container.className = "case-study-content";
+
+  if (Array.isArray(caseStudy.metrics) && caseStudy.metrics.length) {
+    const metrics = createElement("section", "case-study-metrics");
+    metrics.setAttribute("aria-label", `${project.title} project highlights`);
+    caseStudy.metrics.forEach((item) => {
+      const metric = createElement("div", "case-study-metric");
+      metric.append(
+        createElement("strong", "", item.value),
+        createElement("span", "", item.label),
+      );
+      metrics.appendChild(metric);
+    });
+    container.appendChild(metrics);
+  }
+
+  (caseStudy.sections || []).forEach((item) => {
+    const section = createElement("section", "case-study-section");
+    const copy = createElement("div", "case-study-section-copy");
+    copy.append(
+      createElement("p", "case-study-eyebrow", item.eyebrow),
+      createElement("h2", "", item.title),
+    );
+
+    const body = createElement("div", "case-study-body");
+    (item.paragraphs || []).forEach((paragraph) => {
+      body.appendChild(createElement("p", "", paragraph));
+    });
+    if (Array.isArray(item.points) && item.points.length) {
+      const list = createElement("ul", "case-study-points");
+      item.points.forEach((point) => {
+        list.appendChild(createElement("li", "", point));
+      });
+      body.appendChild(list);
+    }
+    copy.appendChild(body);
+    section.appendChild(copy);
+
+    if (item.media) {
+      const figure = createElement("figure", "case-study-media");
+      const image = document.createElement("img");
+      image.src = item.media.src;
+      image.alt = item.media.alt;
+      image.loading = "lazy";
+      figure.appendChild(image);
+      if (item.media.caption) {
+        figure.appendChild(
+          createElement("figcaption", "gallery-caption", item.media.caption),
+        );
+      }
+      section.appendChild(figure);
+    }
+    container.appendChild(section);
+  });
+
+  if (caseStudy.closing) {
+    const closing = createElement("section", "case-study-closing");
+    closing.append(
+      createElement("p", "case-study-eyebrow", caseStudy.closing.eyebrow),
+      createElement("h2", "", caseStudy.closing.title),
+      createElement("p", "case-study-closing-copy", caseStudy.closing.text),
+    );
+    container.appendChild(closing);
+  }
 }
 
 function renderPostGrid(project, gallery) {
@@ -218,7 +289,9 @@ function renderHome(data) {
   });
 
   const grid = document.getElementById("projectGrid");
-  const projects = data.projects.filter((project) => project.published !== false);
+  const projects = data.projects.filter(
+    (project) => project.published !== false,
+  );
 
   projects.forEach((project) => {
     const portraitClass =
@@ -277,7 +350,12 @@ function renderProject(data) {
   }
 
   document.title = `${project.title} — Vlad Frolov`;
-  document.documentElement.style.setProperty("--project-accent", project.accent);
+  document.documentElement.style.setProperty(
+    "--project-accent",
+    project.accent,
+  );
+  const description = document.querySelector('meta[name="description"]');
+  if (description) description.content = project.summary;
   setText("projectType", project.type);
   setText("projectTitle", project.title);
   setText("projectSummary", project.summary);
@@ -293,6 +371,7 @@ function renderProject(data) {
   project.story.forEach((paragraph) => {
     storyCopy.appendChild(createElement("p", "", paragraph));
   });
+  renderCaseStudy(project);
 
   const gallery = document.getElementById("projectGallery");
   const hasPosts = Array.isArray(project.posts) && project.posts.length;

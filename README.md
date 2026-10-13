@@ -35,6 +35,8 @@ contact details, project order, project text, and images.
 - Use `wide`, `narrow`, or `offset` for home page card sizes.
 - A project can have a `posts` array for carousel tiles, a `gallery` array for
   standalone images, or both.
+- Product projects can add a `caseStudy` object with metrics, narrative
+  sections, supporting media, and a closing outcome statement.
 
 ## Preview locally
 

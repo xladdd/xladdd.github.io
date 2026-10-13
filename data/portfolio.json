@@ -1,22 +1,22 @@
 {
   "site": {
-    "eyebrow": "Designer / Prague",
-    "headline": "Ideas made visual.",
-    "intro": "I’m Vlad Frolov, a designer working across social content, illustration, packaging and visual identity. I turn clear ideas into images with character.",
+    "eyebrow": "Designer + design engineer / Prague",
+    "headline": "Ideas made useful.",
+    "intro": "I’m Vlad Frolov, a designer working across visual communication and design engineering. I turn publishing problems into clear systems, useful tools and images with character.",
     "about": {
-      "title": "Clear ideas, strong images.",
+      "title": "Clear ideas, useful systems.",
       "paragraphs": [
-        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to stop and look at.",
-        "My work moves between image making, typography, packaging and digital formats. My background in editorial production and frontend development also helps me carry concepts cleanly from first sketch to finished asset."
+        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to use, understand or stop and look at.",
+        "My work moves between product interfaces, workflow automation, image making, typography and editorial design. A background in publishing and frontend development helps me move from first-hand problem to designed system and shipped result."
       ]
     },
     "capabilities": [
-      "Social content",
+      "Product and interface design",
+      "Design engineering",
+      "Workflow automation",
+      "Visual systems",
       "Illustration and image making",
-      "Visual identity",
-      "Packaging",
-      "Editorial layout",
-      "Digital design"
+      "Editorial design"
     ],
     "contact": {
       "email": "vlad@frolov.cz",
@@ -24,6 +24,120 @@
     }
   },
   "projects": [
+    {
+      "id": "robot",
+      "title": "Robot",
+      "type": "Product case study",
+      "year": "2026",
+      "role": "Product designer & developer",
+      "accent": "#ff5c1a",
+      "disciplines": [
+        "Product design",
+        "Design engineering",
+        "AI-assisted development"
+      ],
+      "summary": "A bilingual workspace that turns repetitive publishing tasks into focused tools for designers and editors.",
+      "story": [
+        "Textbook production is full of small, repetitive jobs: extracting text, building indexes, preparing images, splitting covers, generating barcodes and moving reviewed content into InDesign. Each one takes time away from the decisions that need a designer.",
+        "I initiated, designed and shipped Robot as a private Next.js workspace for Taktik. The v0.5 pilot brings ten task-specific apps into one interface—seven AI-enabled workflows and three that process files locally in the browser."
+      ],
+      "cover": {
+        "src": "./photos/projects/robot/robot-workspace.webp",
+        "alt": "Robot Cover Generator interface with a concept workspace and production controls"
+      },
+      "card": {
+        "size": "wide",
+        "orientation": "landscape"
+      },
+      "caseStudy": {
+        "metrics": [
+          {
+            "value": "10",
+            "label": "apps in the v0.5 pilot"
+          },
+          {
+            "value": "7 + 3",
+            "label": "AI-enabled + local workflows"
+          },
+          {
+            "value": "EN / CZ",
+            "label": "bilingual by design"
+          },
+          {
+            "value": "1",
+            "label": "shared interface system"
+          }
+        ],
+        "sections": [
+          {
+            "eyebrow": "01 / Opportunity",
+            "title": "Start with the production floor.",
+            "paragraphs": [
+              "Robot did not start with a feature list. I mapped recurring friction in real textbook production and looked for the moments where designers and editors were spending time on mechanics rather than judgement.",
+              "That led to small, task-specific apps instead of a general chat interface. Each tool has a clear input, a review point and an output that fits the next step in the publishing workflow."
+            ],
+            "points": [
+              "One focused job per tool",
+              "Keep creative judgement with the designer",
+              "Make processing, privacy and cost understandable"
+            ],
+            "media": {
+              "src": "./photos/projects/robot/robot-cover-workbench.webp",
+              "alt": "Robot workspace showing its text, image and design tool navigation",
+              "caption": "One workspace for recurring publishing tasks"
+            }
+          },
+          {
+            "eyebrow": "02 / Product system",
+            "title": "Design one system, not ten mini-sites.",
+            "paragraphs": [
+              "I created a shared shell and a small set of interface archetypes: text workbenches, visual workbenches, compact utilities and task-specific workspaces. Predictable title blocks, controls, previews and states make new tools feel familiar before a user has learned them.",
+              "Orange consistently marks the next action. Turquoise marks local processing and ready states. Empty, loading, review, success and error states follow the same hierarchy across the product."
+            ],
+            "media": {
+              "src": "./photos/projects/robot/robot-grep-result.webp",
+              "alt": "Robot GREP Builder showing an AI-generated InDesign find and change expression",
+              "caption": "A compact utility turns plain-language intent into an InDesign GREP expression"
+            }
+          },
+          {
+            "eyebrow": "03 / Technical strategy",
+            "title": "Use AI where it earns its place.",
+            "paragraphs": [
+              "Not every automation needs a model. Robot labels every workflow as AI enabled or processed locally, then uses the simplest reliable path for the job. Sensitive PDFs and InDesign files stay in the browser where possible; model-backed tasks go through authenticated server endpoints.",
+              "The pilot report also makes variable costs explicit by task and model. That turns AI from a vague promise into a product decision the team can test against time saved, output quality and the amount of manual correction still required."
+            ],
+            "media": {
+              "src": "./photos/projects/robot/robot-solutions-importer.webp",
+              "alt": "Robot Solutions Importer with three local document inputs and typography controls",
+              "caption": "The Solutions Importer keeps PDFs and InDesign data in the browser"
+            }
+          },
+          {
+            "eyebrow": "04 / Build process",
+            "title": "AI-assisted, designer-directed.",
+            "paragraphs": [
+              "I built Robot in Next.js with OpenAI Codex as a development collaborator. It accelerated implementation, refactoring, documentation and testing; I set the product scope, interaction model, visual direction, architecture and acceptance criteria, then reviewed the output against real production workflows.",
+              "A registry-driven architecture keeps every tool’s interface, bilingual copy, server logic and documentation together. Automated generation, production builds and browser fixtures help new tools enter the system without breaking the shared shell."
+            ]
+          },
+          {
+            "eyebrow": "05 / Shipping",
+            "title": "Ship the feedback loop, not just the features.",
+            "paragraphs": [
+              "Robot includes in-context information drawers, Czech and English interfaces, light and dark themes, authentication and a feedback flow that creates actionable tasks in Asana. These are not extras: they make a private prototype usable by a real team.",
+              "v0.5 is ready for selective pilot testing on active publishing projects. Routine utilities such as cover splitting and barcode generation are ready for regular use; model-backed workflows have explicit pilot plans for validating quality, usability and actual cost before a broader v1.0 release."
+            ]
+          }
+        ],
+        "closing": {
+          "eyebrow": "Outcome",
+          "title": "Less time rebuilding the same steps. More time for design decisions.",
+          "text": "Robot turns scattered scripts, model prompts and manual production routines into shared infrastructure the team can understand, test and improve."
+        }
+      },
+      "published": true
+    },
     {
       "id": "taktik",
       "title": "Taktik",
