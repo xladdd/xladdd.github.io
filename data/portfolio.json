@@ -1,12 +1,12 @@
 {
   "site": {
-    "eyebrow": "Designer + design engineer / Prague",
+    "eyebrow": "Design engineer / Prague",
     "headline": "Ideas made useful.",
     "intro": "I’m Vlad Frolov, a designer working across visual communication and design engineering. I turn publishing problems into clear systems, useful tools and images with character.",
     "about": {
       "title": "Clear ideas, useful systems.",
       "paragraphs": [
-        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to use, understand or stop and look at.",
+        "I’m a Prague-based designer interested in the point where a good idea becomes something people want to use, or stop and look at.",
         "My work moves between product interfaces, workflow automation, image making, typography and editorial design. A background in publishing and frontend development helps me move from first-hand problem to designed system and shipped result."
       ]
     },
@@ -14,9 +14,9 @@
       "Product and interface design",
       "Design engineering",
       "Workflow automation",
-      "Visual systems",
       "Illustration and image making",
-      "Editorial design"
+      "Editorial design",
+      "Visual systems"
     ],
     "contact": {
       "email": "vlad@frolov.cz",
@@ -42,7 +42,7 @@
         "I initiated, designed and shipped Robot as a private Next.js workspace for Taktik. The v0.5 pilot brings ten task-specific apps into one interface—seven AI-enabled workflows and three that process files locally in the browser."
       ],
       "cover": {
-        "src": "./photos/projects/robot/robot-workspace.webp",
+        "src": "./photos/projects/robot/lets go.png",
         "alt": "Robot Cover Generator interface with a concept workspace and production controls"
       },
       "card": {
@@ -82,7 +82,7 @@
               "Make processing, privacy and cost understandable"
             ],
             "media": {
-              "src": "./photos/projects/robot/robot-cover-workbench.webp",
+              "src": "./photos/projects/robot/robot-workspace.webp",
               "alt": "Robot workspace showing its text, image and design tool navigation",
               "caption": "One workspace for recurring publishing tasks"
             }
